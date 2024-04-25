@@ -5,7 +5,7 @@ title: Wet Sci-Fi Textures Sound Pack (FREE)
 
 ![description](/blogImages/Wet_SciFi_Textures.png)
 
-#### Wet Sci-Fi Textures Sound Pack (FREE)
+#### **Wet Sci-Fi Textures Sound Pack (FREE)**
 
 
 Hey everyone! I'm excited to share a new sound pack featuring 20 wet sci-fi textures that I recently created using Vital. Plus, it's available for free! 🌟
