@@ -37,7 +37,7 @@ function About() {
               <li className='font-extrabold underline pb-5 list-none'>Can't wait to play:</li>
               <li>Alan Wake 2</li>
               <li>Returnal</li>
-              <li>Payday 3</li>
+              <li>Vampire: The Masquerade - Bloodlines 2</li>
               <li>Ghostrunner 2</li>
               <li>The Outlast Trials</li>
             </ul>
