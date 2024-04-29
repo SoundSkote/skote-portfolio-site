@@ -26,7 +26,7 @@ function Blog() {
     }, []);
     
     return (
-      <div className="flex flex-col pt-40 justify-center items-center bg-white">
+      <div className="flex flex-col pt-40 justify-center items-center bg-white max-w-screen overflow-hidden">
         <h1 className="text-6xl text-black">Blog</h1>
         <div className="flex flex-col space-y-12 pt-10 w-full items-center p-2 z-10">
             {posts.map((post, index) => (
@@ -34,7 +34,8 @@ function Blog() {
             ))}
         </div>
         <img className="w-full z-50 object-cover pt-20" src={image} alt='divider'/>
-        <img className='absolute top-80 lg:top-40 -right-52 lg:w-1/2 m-auto' src={splatter} alt=''/>
+        <img className='absolute top-80 lg:top-40 -left-20 lg:w-1/2' src={splatter} alt=''/>
+        
       </div>
     );
   }
