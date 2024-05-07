@@ -11,11 +11,11 @@ function About() {
         </div>
         <p className='text-xl text-gray-200 break-words text-left flex-1 space-y-5 xl:text-2xl'>
           <h1>Welcome!</h1>
-          <p>I’m Georgios Georgakis, a game audio sound designer based in Leeds, UK originally from Athens, Greece.</p>
-          <p>My passion for audio began at an early age when I started playing drums and recording music with friends. I went on to earn a Bachelor’s degree in Music Technology & Acoustics. During my Bachelor’s degree, I discovered the magic of sound design and I got passionate about game audio. This is why I relocated to Leeds and graduated from the Sound and Music for Interactive Games master’s program at Leeds Beckett University to further explore game audio design and the video game industry. I also love connecting with like-minded people, and I regularly attend game industry events such as the Leeds Games Toast, Game Audio Nexus, Game Audio Symposium or the Develop:Conference.</p>
-          <p>To date, I’ve been involved with a couple of indie titles such as Carbonflesh and Selini, alongside pursuing several personal projects, university assignments, and enthusiastically participating in game jams.</p>
+          <p>I’m Georgios Georgakis, a game audio sound designer from Athens, Greece.</p>
+          <p>My passion for audio began at an early age when I started playing drums and recording music with my friends. I went on to earn a Bachelor’s degree in Music Technology & Acoustics. During my Bachelor’s degree, I discovered the magic of sound design and became passionate about game audio. This led me to relocate to Leeds and graduate from the Sound and Music for Interactive Games master’s program at Leeds Beckett University, which allowed me to further explore game audio design and the video game industry. Additionally, I love connecting with like-minded people and regularly attend game industry events such as the Leeds Games Toast, Game Audio Nexus, Game Audio Symposium, Develop:Conference, and GDA Greece meetups.</p>
+          <p>To date, I’ve been involved with a couple of indie titles such as Carbonflesh and Selini. I have also collaborated with Epic Stock Media to create sound libraries, alongside pursuing several personal projects, university assignments, and enthusiastically participating in game jams.</p>
           <p>I revel in the creative freedom this field offers and I love the power of procedural sound design. As for my preferred tools, I tend to favor Reaper for sound design, and Wwise for implementation.</p>
-          <p>I am currently looking to join a dynamic audio team to produce great and unique audio experiences.</p>
+          <p>Currently, I am seeking to join a dynamic audio team to produce great and unique audio experiences.</p>
         </p>
       </div>
       <div className='flex flex-col w-full pt-10 lg:items-top text-2xl items-center lg:justify-start lg:space-x-40'>
