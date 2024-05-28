@@ -44,7 +44,7 @@ function ImplementationReels() {
           </div>
 
         </div>
-/*
+  {/*
         <div className='flex flex-col w-full items-start lg:flex-row lg:space-x-5'>
           <div className='flex flex-col w-full'>
             <div id="video-wrapper3" className='relative flex w-full h-full items-end p-6'>
@@ -68,7 +68,7 @@ function ImplementationReels() {
           </div>
         </div>
       </div>
-*/
+*/}
       <img className="w-full z-50 object-cover" src={image} alt='divider'/>
     </div>
     
