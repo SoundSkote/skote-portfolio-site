@@ -36,10 +36,10 @@ function About() {
             <ul className='lg:w-1/3'>
               <li className='font-extrabold underline pb-5 list-none'>Can't wait to play:</li>
               <li>Alan Wake 2</li>
-              <li>Returnal</li>
+              <li>Still Wakes the Deep</li>
               <li>Vampire: The Masquerade - Bloodlines 2</li>
-              <li>Ghostrunner 2</li>
-              <li>The Outlast Trials</li>
+              <li>Silent Hill 2 remake</li>
+              <li>Banishers: Ghosts of New Eden</li>
             </ul>
             <ul className='lg:w-1/3'>
               <li className='font-extrabold underline pb-5 list-none'>My hobbies:</li>
