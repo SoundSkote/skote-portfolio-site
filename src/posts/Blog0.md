@@ -38,6 +38,8 @@ After playing the game for a while I made a Spreadsheet for all the sounds that 
 
 ![Lyra Control Asset List!](/blogImages/post0.png "Lyra Control Asset List")
 
+<img align="center"  src="/blogImages/post0.png">
+
 I added the type of sounds that I’ll need to make. This gives a good first picture of what the game’s needs are, but keep in mind that all of these sounds need multiple variations, so the actual number of the SFX will multiply.
 
 Lastly, to make the Lyra project a bit more unique, I added a new character asset to bring more life to the game. I’ll probably be adding more graphic elements here and there as I progress to make things more exciting.
