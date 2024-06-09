@@ -27,7 +27,7 @@ function Blog() {
     
     return (
       <div className="flex flex-col pt-40 justify-center items-center bg-white max-w-screen overflow-hidden">
-        <h1 className="text-6xl text-black">Blog</h1>
+        <h1 className='text-3xl font-extrabold lg:text-5xl'>Blog</h1>        
         <div className="flex flex-col space-y-12 pt-10 w-full items-center p-2 z-10">
             {posts.map((post, index) => (
                 <PostCard key={index} title={fm(post.content).attributes.title} filename={post.fileName}/>
