@@ -37,7 +37,7 @@ Before I start working, it's very important to plan ahead and organise my work. 
 
 After playing the game for a while I made a Spreadsheet for all the sounds that I seem to need to make.
 
-![Lyra Control Asset List!](/public/blogImages/post0.PNG "Lyra Control Asset List")
+![Lyra Control Asset List!](/blogImages/post0.png "Lyra Control Asset List")
 
 I added the type of sounds that I’ll need to make. This gives a good first picture of what the game’s needs are, but keep in mind that all of these sounds need multiple variations, so the actual number of the SFX will multiply.
 
