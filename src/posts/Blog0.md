@@ -5,12 +5,10 @@ title: Lyra Sound Redesign Blog 0 - Setting Up
 
 ![description](/blogImages/Lyra0.png)
 
-<h1 style="text-align: center;">Lyra Sound Redesign Blog 0 - Setting Up</h1>
 
 Lyra Sound Redesign Blog 0 - Setting Up
 ---
 
-</div>
 
 
 Hi all!
@@ -39,7 +37,7 @@ Before I start working, it's very important to plan ahead and organise my work. 
 
 After playing the game for a while I made a Spreadsheet for all the sounds that I seem to need to make.
 
-![Lyra Control Asset List!](/assets/images//blogImages/post0.png) "Lyra Control Asset List"
+![Lyra Control Asset List!](/assets/images/Lyra_Control_Asset_List.jpg "Lyra Control Asset List")
 
 I added the type of sounds that I’ll need to make. This gives a good first picture of what the game’s needs are, but keep in mind that all of these sounds need multiple variations, so the actual number of the SFX will multiply.
 
@@ -47,7 +45,7 @@ Lastly, to make the Lyra project a bit more unique, I added a new character asse
 
 Any feedback or advice throughout this blog series is much appreciated!
 
-The first chapter of the blog will focus on the games' environment and ambience.
+The first chapter of the blog will focus on the game's environment and ambience.
 
 **Georgios Georgakis**
 
