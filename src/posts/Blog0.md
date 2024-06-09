@@ -5,10 +5,10 @@ title: Lyra Sound Redesign Blog 0 - Setting Up
 
 ![description](/blogImages/Lyra0.png)
 
-<h1 align="center">Lyra Sound Redesign Blog 0 - Setting Up</h1>
+<h1 style="text-align: center;">Lyra Sound Redesign Blog 0 - Setting Up</h1>
 
-//Lyra Sound Redesign Blog 0 - Setting Up
-//---
+Lyra Sound Redesign Blog 0 - Setting Up
+---
 
 </div>
 
