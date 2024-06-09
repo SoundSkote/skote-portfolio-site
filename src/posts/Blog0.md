@@ -5,6 +5,7 @@ title: Lyra Sound Redesign Blog 0 - Setting Up
 
 ![description](/blogImages/Lyra0.png)
 
+<p style="text-align: center;">A piece of centered text</p>
 
 Lyra Sound Redesign Blog 0 - Setting Up
 ---
