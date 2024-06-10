@@ -5,7 +5,7 @@ title: Lyra Sound Redesign Blog 0 - Setting Up
 
 ![description](/blogImages/Blog0.png)
 
-Lyra Sound Redesign Blog 0 - Setting Up
+Lyra Sound Redesign Blog 0 - Setting Up  
 By Georgios Georgakis
 
 ---
