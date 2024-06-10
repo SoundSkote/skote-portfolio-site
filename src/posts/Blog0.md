@@ -29,7 +29,7 @@ Before proceeding with this blog, please keep in mind that these systems are bei
 
 Lyra is a third-person shooter sample game project for Unreal Engine 5 (UE5) made by Epic Games. I chose this game as it features many gameplay mechanics that allow me to create systems for, such as shooting and map interactions. Additionally, it is fully playable and will allow me to experiment with audio systems without having to create other systems such as animations and new assets, although I plan to add a few extra pieces. 
 
-###Blog Structure
+### Blog Structure
 
 To make it easier for people to follow my progress, I’ll blog each section of the game as it’s completed and I will be covering the following topics:
 
