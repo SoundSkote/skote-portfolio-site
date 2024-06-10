@@ -56,7 +56,7 @@ I added the type of sounds that I’ll need to make. This gives a good first pic
 
 Lastly, to make the Lyra project a bit more unique, I used assets from the Unreal Engine Marketplace to add a new character asset and change the map's textures to bring more life and excitment into the game.
 
-![Lyra Control Asset List!](/blogImages/New_Char.png "New Character Asset") 
+![New Character Asset!](/blogImages/New_Char.png "New Character Asset") 
 
 ### Next Steps
 
