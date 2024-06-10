@@ -7,7 +7,7 @@ title: Lyra Sound Redesign Blog 0 - Setting Up
 
 Lyra Sound Redesign Blog 0 - Setting Up
 ---
-
+Georgios Georgakis
 
 
 Hi all!
@@ -19,18 +19,18 @@ Before proceeding with this blog, please keep in mind that these systems are bei
 
 
 
-#### So what is Lyra? 
+### So what is Lyra? 
 
 Lyra is a third-person shooter sample game project for Unreal Engine 5 (UE5) made by Epic Games. I chose this game as it features many gameplay mechanics that allow me to create systems for, such as shooting and map interactions. Additionally, it is fully playable and will allow me to experiment with audio systems without having to create other systems such as animations and new assets, although I plan to add a few extra pieces. 
 
 To make it easier for people to follow the progression, I’ll post a blog for each section of the game when it is completed. It seems that there will be around 6 blog posts in total covering the environment-ambience, the animations, the interactions, the weapons, the occlusion and reverb, and the overall mixing.
 
 
-#### Wwise Integration
+### Wwise Integration
 
 To start working on this project, I need to set things up. Firstly, I integrated Wwise 2023.1.2 and Unreal Engine 5.2. I wanted to use Wwise for two main reasons. Firstly, this is a purely personal project and although I’ve planned its production and deadlines, I have the flexibility to allow myself to experiment more in an environment that I’m already pretty familiar with. The second reason is that Lyra already uses UE’s Metasounds, so it wouldn’t be much of a technical challenge or a learning experience for me as most of the systems are already set inside.
 
-#### Planning ahead
+### Planning ahead
 
 Before I start working, it's very important to plan ahead and organise my work. This will allow me to keep track of my progress, have an overview of the project as a whole. Also, in a real project it would help me prioritise parts of the game that may be more important or need more time than others.
 
@@ -47,7 +47,7 @@ Any feedback or advice throughout this blog series is much appreciated!
 
 The first chapter of the blog will focus on the game's environment and ambience.
 
-**Georgios Georgakis**
+
 
 
 
