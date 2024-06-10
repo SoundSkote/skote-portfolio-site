@@ -4,7 +4,7 @@ function PostCard({title, filename}) {
   const imgName = path.split('.')[0];
 
   return (
-    <a className={`flex flex-col h-[28rem] w-full md:w-3/4 justify-end items-center group relative`} href={`/blog/${imgName}`}>
+    <a className={`flex flex-col h-[28rem] w-full md:w-3/4 xl:w-2/4 justify-end items-center group relative`} href={`/blog/${imgName}`}>
       <img src={`blogImages/${imgName}.png`} className="absolute inset-0 w-full h-full object-cover" alt="associated with the article"></img>
       <div className="flex bg-gradient-to-t from-black from-10% group-hover:from-20% w-full h-full justify-center items-end absolute">
         <div className="flex flex-col w-full m-2 items-center text-center">
