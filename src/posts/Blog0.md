@@ -31,7 +31,7 @@ Lyra is a third-person shooter sample game project for Unreal Engine 5 (UE5) mad
 
 ###Blog Structure
 
-To make it easier to follow my progress, I’ll post a blog for each section of the game as it’s completed. There will be around six posts in total, covering:
+To make it easier for people to follow my progress, I’ll blog each section of the game as it’s completed and I will be covering the following topics:
 
   -  Environment and Ambience
   -  Animations
