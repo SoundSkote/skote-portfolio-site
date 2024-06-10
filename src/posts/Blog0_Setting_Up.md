@@ -3,7 +3,7 @@ title: Lyra Sound Redesign Blog 0 - Setting Up
 ---
 
 
-![description](/blogImages/Blog0.png)
+![description](/blogImages/Blog0_Setting_Up.png)
 
 Lyra Sound Redesign Blog 0 - Setting Up  
 ---
