@@ -20,7 +20,7 @@ Hi all!
 
 I decided to start blogging my progress on a portfolio project I started. This project is a complete sound redesign of the sample game Lyra using Wwise. The aim of this project is to create a playable level that will allow me to showcase my skills but will also allow me to experiment and learn.This point of this redesign is not just replace the sounds on pre-existing systems but to create my own with my own sounds attached to them. For that reason, I am going to use Wwise instead of the pre-made Metasound systems. At the end of this blog series, I’ll also create a video showcasing my work. Any advice or feedback about the sound design or the implementation is much appreciated!
 
-##Project Overview
+## Project Overview
 
 Before proceeding with this blog, please keep in mind that these systems are being made by a sound designer for other sound designers. Everything in this project will be made from a non-coder perspective for the purpose of exploring and creating interesting audio systems. However, I’ll try to optimise these systems as much as I can to create a better end product. 
 
