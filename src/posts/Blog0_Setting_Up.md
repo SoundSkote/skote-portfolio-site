@@ -25,7 +25,7 @@ I decided to start blogging my progress on a portfolio project I started. This p
 Before proceeding with this blog, please keep in mind that these systems are being made by a sound designer for other sound designers. Everything in this project will be made from a non-coder perspective for the purpose of exploring and creating interesting audio systems. However, I’ll try to optimise these systems as much as I can to create a better end product. 
 
 
-#### So what is Lyra? 
+### So what is Lyra? 
 
 Lyra is a third-person shooter sample game project for Unreal Engine 5 (UE5) made by Epic Games. I chose this game as it features many gameplay mechanics that allow me to create systems for, such as shooting and map interactions. Additionally, it is fully playable and will allow me to experiment with audio systems without having to create other systems such as animations and new assets, although I plan to add a few extra pieces. 
 
