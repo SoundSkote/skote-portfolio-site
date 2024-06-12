@@ -15,6 +15,7 @@ title: Lyra Sound Redesign Blog 0 - Setting Up
 
 
 
+&nbsp;&nbsp;&nbsp;
 
 Hi all!
 
@@ -47,17 +48,22 @@ To start working on this project, I need to set things up. Firstly, I integrated
 
 ### Planning ahead
 
-Before diving into the work, planning is crucial. It helps me track progress and prioritize important tasks. After playing the game, I created a spreadsheet listing all the sounds I need to make. This provides a good initial picture of the game’s audio needs. \
- \
+Before diving into the work, planning is crucial. It helps me track progress and prioritize important tasks. After playing the game, I created a spreadsheet listing all the sounds I need to make. This provides a good initial picture of the game’s audio needs. 
+
+&nbsp;&nbsp;&nbsp;
+
 
 
 ![Lyra Control Asset List!](/blogImages/post0.png "Lyra Control Asset List") 
 
+&nbsp;&nbsp;&nbsp;
 
 I added the type of sounds that I’ll need to make. This gives a good first picture of what the game’s needs are, but keep in mind that all of these sounds need multiple variations, so the actual number of the SFX will multiply.
 
 Lastly, to make the Lyra project a bit more unique, I used assets from the Unreal Engine Marketplace to add a new character asset and change the map's textures to bring more life and excitment into the game.
- \
+
+&nbsp;&nbsp;&nbsp;
+
 ![New Character Asset!](/blogImages/New_Char.png "New Character Asset") 
 
 &nbsp;&nbsp;&nbsp;
