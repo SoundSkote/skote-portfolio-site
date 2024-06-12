@@ -57,6 +57,7 @@ Before diving into the work, planning is crucial. It helps me track progress and
 
 
 ![Lyra Control Asset List!](/blogImages/post0.png "Lyra Control Asset List") 
+###### Lyra Control Asset List
 
 &nbsp;&nbsp;&nbsp;
 
