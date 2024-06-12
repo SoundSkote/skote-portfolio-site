@@ -47,7 +47,8 @@ To start working on this project, I need to set things up. Firstly, I integrated
 
 ### Planning ahead
 
-Before diving into the work, planning is crucial. It helps me track progress and prioritize important tasks. After playing the game, I created a spreadsheet listing all the sounds I need to make. This provides a good initial picture of the game’s audio needs, 
+Before diving into the work, planning is crucial. It helps me track progress and prioritize important tasks. After playing the game, I created a spreadsheet listing all the sounds I need to make. This provides a good initial picture of the game’s audio needs. \
+\
 
 ![Lyra Control Asset List!](/blogImages/post0.png "Lyra Control Asset List") 
 
