@@ -57,7 +57,7 @@ Before diving into the work, planning is crucial. It helps me track progress and
 
 
 ![Lyra Control Asset List!](/blogImages/post0.png "Lyra Control Asset List") 
-###### Lyra Control Asset List
+###### Lyra Control Asset List.
 
 &nbsp;&nbsp;&nbsp;
 
@@ -68,6 +68,7 @@ Lastly, to make the Lyra project a bit more unique, I used assets from the Unrea
 &nbsp;&nbsp;&nbsp;
 
 ![New Character Asset!](/blogImages/New_Char.png "New Character Asset") 
+###### New character asset and textures around the map.
 
 &nbsp;&nbsp;&nbsp;
 
