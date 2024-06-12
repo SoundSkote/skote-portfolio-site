@@ -12,6 +12,10 @@
   margin-right: auto;
 }
 
+.markdown h6{
+  text-align: center;
+}
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
