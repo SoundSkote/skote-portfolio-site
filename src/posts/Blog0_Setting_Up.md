@@ -24,16 +24,20 @@ title: Lyra Sound Redesign Blog 0 - Setting Up
 
 Hi all!
 
-I decided to start blogging my progress on a portfolio project I started. This project is a complete sound redesign of the sample game Lyra using Wwise. The aim of this project is to create a playable level that will allow me to showcase my skills but will also allow me to experiment and learn.This point of this redesign is not just replace the sounds on pre-existing systems but to create my own with my own sounds attached to them. For that reason, I am going to use Wwise instead of the pre-made Metasound systems. At the end of this blog series, I’ll also create a video showcasing my work. Any advice or feedback about the sound design or the implementation is much appreciated!
+I decided to start blogging my progress on a portfolio project I started. This project is a complete sound redesign of the sample game Lyra using Wwise. The aim of this project is to create a playable level that will showcase my skills and allow me to experiment and learn.
 
 ## Project Overview
 
-Before proceeding with this blog, please keep in mind that these systems are being made by a sound designer for other sound designers. Everything in this project will be made from a non-coder perspective for the purpose of exploring and creating interesting audio systems. However, I’ll try to optimise these systems as much as I can to create a better end product. 
+The point of this redesign is not just to replace the sounds on pre-existing systems but to create my own systems with my own sounds and even create some systems that do not exist in the game. I've chosen Wwise over Metasound to avoid using its pre-made systems  and get even better on my Wwise skills. At the end of this blog series, I’ll also create a video showcasing my work and the completed product. Any advice or feedback about the sound design or the implementation is much appreciated!
+
+&nbsp;&nbsp;&nbsp;
+
+Before proceeding with this blog, please keep in mind that these systems are being made by a sound designer for other sound designers. This project is approached from a non-coder perspective for the purpose of exploring and creating interesting audio systems. However, I’ll try to optimise these systems as much as I can to create a better end product. 
 
 
 ### So what is Lyra? 
 
-Lyra is a third-person shooter sample game project for Unreal Engine 5 (UE5) made by Epic Games. I chose this game as it features many gameplay mechanics that allow me to create systems for, such as shooting and map interactions. Additionally, it is fully playable and will allow me to experiment with audio systems without having to create other systems such as animations and new assets, although I plan to add a few extra pieces. 
+Lyra is a third-person shooter game for Unreal Engine 5 (UE5) made by Epic Games. I chose Lyra as it features many gameplay mechanics that allow me to create systems for, such as map interactions, objectives and shooting. Additionally, it is fully playable and will allow me to experiment with audio systems without having to create other systems such as animations and new assets, although I plan to add a few extra pieces. 
 
 ### Blog Structure
 
@@ -49,11 +53,11 @@ To make it easier for people to follow my progress, I’ll blog each section of 
 
 ### Wwise Integration
 
-To start working on this project, I need to set things up. Firstly, I integrated Wwise 2023.1.2 and Unreal Engine 5.2. I wanted to use Wwise for two main reasons. Firstly, this is a purely personal project and although I’ve planned its production and deadlines, I have the flexibility to allow myself to experiment more in an environment that I’m already pretty familiar with. The second reason is that Lyra already uses UE’s Metasounds, so it wouldn’t be much of a technical challenge or a learning experience for me as most of the systems are already set inside.
+To start working on this project, I need to set things up. Firstly, I integrated Wwise 2023.1.2 and Unreal Engine 5.2. I wanted to use Wwise for two main reasons. Firstly, this is a purely personal project and although I’ve planned its production and deadlines, I have the flexibility to allow myself be more experimental. The second reason is that Lyra already uses UE’s Metasounds, so it wouldn’t be much of a technical challenge or a learning experience for me to use pre-existing systems.
 
 ### Planning ahead
 
-Before diving into the work, planning is crucial. It helps me track progress and prioritize important tasks. After playing the game, I created a spreadsheet listing all the sounds I need to make. This provides a good initial picture of the game’s audio needs. 
+Before diving into the work, planning is crucial as it helps me track my progress and prioritize tasks. After playing the game, I created a spreadsheet listing all the sounds I need to create. This provides a good initial picture of the game’s audio needs. 
 
 &nbsp;&nbsp;&nbsp;
 
@@ -64,9 +68,9 @@ Before diving into the work, planning is crucial. It helps me track progress and
 
 &nbsp;&nbsp;&nbsp;
 
-I added the type of sounds that I’ll need to make. This gives a good first picture of what the game’s needs are, but keep in mind that all of these sounds need multiple variations, so the actual number of the SFX will multiply.
+This gives a good first picture of what the game’s needs are and it's veary useful for planning ahead.
 
-Lastly, to make the Lyra project a bit more unique, I used assets from the Unreal Engine Marketplace to add a new character asset and change the map's textures to bring more life and excitment into the game.
+Lastly, to add uniqueness to this project, I used assets from the Unreal Engine Marketplace to bring more life and excitment into the game.
 
 &nbsp;&nbsp;&nbsp;
 
