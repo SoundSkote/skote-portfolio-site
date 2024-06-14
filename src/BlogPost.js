@@ -20,7 +20,7 @@ function BlogPost() {
     });
   
     return (
-      <div className="flex flex-col pt-40 justify-center items-center">
+      <div className="flex flex-col pt-40 justify-center items-center bg-white text-black">
         <ReactMarkdown className="markdown text-left justify-center items-center space-y-5 w-1/2">{fm(post.toString()).body}</ReactMarkdown>
       </div>
     );
