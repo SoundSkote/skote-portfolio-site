@@ -14,7 +14,7 @@ function Footer() {
   return (
     <div className='flex flex-col justify-center items-center'>
       <div className='flex flex-col md:flex-row justify-between w-fit md:w-full px-5 space-y-10 md:space-y-0'>
-        <img src={logo} alt='Georgios Logo' className='h-24 md:pb-2 transition-all duration-300 hover:scale-110 cursor-pointer' onClick={(e) => {e.preventDefault(); scrollToSection('showreel')}}></img>
+        <img src={logo} alt='Georgios Logo' className='h-12 md:pb-2 transition-all duration-300 hover:scale-110 cursor-pointer' onClick={(e) => {e.preventDefault(); scrollToSection('showreel')}}></img>
         <div className='flex flex-col md:flex-row'>
           <a target="_blank" rel="noreferrer" href="mailto:georgiosaudio@gmail.com" className="flex flex-col md:flex-row h-full w-auto justify-end items-center md:justify-start group">
             <span className='pt-5 transition-all duration-300 md:group-hover:pr-5'>georgiosaudio@gmail.com</span>
