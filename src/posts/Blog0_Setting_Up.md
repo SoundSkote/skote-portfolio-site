@@ -63,8 +63,13 @@ Before diving into the work, planning is crucial as it helps me track my progres
 
 
 
-![Lyra Control Asset List!](/blogImages/post0.png "Lyra Control Asset List") 
-###### Figure 1. Lyra Control Asset List.
+![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
+###### Figure 1. Lyra Control Asset List 1/2.
+
+&nbsp;&nbsp;&nbsp;
+
+![Lyra Control Asset List!](/blogImages/assetlist2.png "Lyra Control Asset List") 
+###### Figure 2. Lyra Control Asset List 2/2.
 
 &nbsp;&nbsp;&nbsp;
 
@@ -75,7 +80,7 @@ Lastly, to add uniqueness to this project, I used assets from the Unreal Engine 
 &nbsp;&nbsp;&nbsp;
 
 ![New Character Asset!](/blogImages/New_Char.png "New Character Asset") 
-###### Figure 2. New character asset and textures around the map.
+###### Figure 3. New character asset and textures around the map.
 
 &nbsp;&nbsp;&nbsp;
 
