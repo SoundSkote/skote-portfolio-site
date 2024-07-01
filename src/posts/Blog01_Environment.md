@@ -126,7 +126,7 @@ One extra thing I did was to adjust the audio listener. I realized while testing
 
 Overall, I think this makes a good foundation for my Lyra redesign, and I am happy with the progress so far. I already started thinking about improvements and new features to add which is a good sign.  In my next blog, I’ll discuss how I handle animation-related sounds such as footsteps and how they can change based on different character states or floor textures.
 
-As always, feedback is more than welcomed!
+As always, feedback is more than welcome!
 
 Thank you.
 
