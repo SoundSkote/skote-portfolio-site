@@ -112,13 +112,13 @@ As mentioned before, it is yet another player-oriented system, so the sounds spa
 
 In Wwise, I use two random containers under a blend container that include the bird chirping sounds. Again, their own attenuation and occlusion systems have been applied.
 
-![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
-###### Figure xx. Birds play system in "Birds_POS" blueprint.
+![Lyra_Birds_1_2!](/blogImages/Lyra_Birds_1_2.png "Lyra_Birds_1_2") 
+###### Figure 10. Birds play system in "Birds_POS" blueprint.
 
 The way this system is set in Unreal Engine, it checks every second for the player’s velocity. If the player is not moving, the system will move forward and wait for some time (“Lyra Voices_Delay”) to check if the player will move. If the player hasn’t moved yet, they'll start to hear a bird. As the player stays idle, they’ll hear more and more birds chirping around them, and they’ll get louder to the point of being easily spotted, and they will start getting annoyed themselves.
 
-![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
-###### Figure xx. System that checking if the player is idle in "Birds_POS" blueprint.
+![Lyra_Birds_2_2!](/blogImages/Lyra_Birds_2_2.png "Lyra_Birds_2_2") 
+###### Figure 11. System that checking if the player is idle in "Birds_POS" blueprint.
 
 One extra thing I did was to adjust the audio listener. I realized while testing my sounds that the listener was my camera instead of my character. This is not a problem per se, but it results in panning  and distance feeling wrong sometimes. To make it sound better and more immersive, I overrode the audio listener following Bartosz Kamiński’s [**video**](https://www.youtube.com/watch?v=KBzHTX-9BvE) inside the character’s blueprint. Now, when the character runs past a spawner, its loudness will peak when my character is next to it rather than when the camera is.
 
@@ -134,7 +134,7 @@ Thank you.
 
 ### Bibliography
 
-Stevens, R. and Raybould, Dave. (2016) Game Audio Implementation : A Practical Guide Using the Unreal Engine [Online]. New York ; Focal Press. Available from: <https://www.taylorfrancis.com/books/e/9781315772783>.
+Stevens, R. and Raybould, Dave. (2016) Game Audio Implementation : A Practical Guide Using the Unreal Engine [Online]. New York ; Focal Press. Available from: [**<https://www.taylorfrancis.com/books/e/9781315772783>**](https://www.taylorfrancis.com/books/e/9781315772783).
 
-DOJNDO. (2015) Camping - The Gaming Dictionary Guide [Online]. IGN. Available from: <https://www.ign.com/wikis/the-gaming-dictionary/Camping> [Accessed 01 July 2024].
+DOJNDO. (2015) Camping - The Gaming Dictionary Guide [Online]. IGN. Available from: [**<https://www.ign.com/wikis/the-gaming-dictionary/Camping>**](https://www.ign.com/wikis/the-gaming-dictionary/Camping) [Accessed 01 July 2024].
 ```
