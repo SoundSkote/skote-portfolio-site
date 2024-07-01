@@ -24,6 +24,7 @@ title: Lyra Sound Redesign Blog 1 - Ambience and Environment
 Hi!
 
 &nbsp;&nbsp;&nbsp;
+
 This is the first chapter of this blog series and I’ll focus on the game’s environment and ambience. These sounds include all the sounds that exist in the map that the player will hear without the need to interact with anything. Since Lyra is a fast paced shooter, ambience can easily be overlooked. However, background ambience forms the crucial foundations on which everything else sits (Stevens and Raybould, 2016), and it deserves attention to detail.
 
 
@@ -58,15 +59,17 @@ The map looks like a circular sky island consisting of two floors. There are thr
 
 ### Source Loops
 
+&nbsp;&nbsp;&nbsp;
+
 **Portal Loop**
 
-&nbsp;&nbsp;&nbsp;
+
 
 The sound of the portal was the first sound I made for Lyra because it’s creative and easy to implement. 
 
 This source loop consists of four asynchronous loops creating a single loop that always evolves but never stops. Additionally, two of them use a very slow LFO (In Wwise) that subtly shifts the pitch of the affected loops. Also, two different attenuations are being used in Wwise to control how the sound changes depending on the character’s distance. Lastly, the sounds are tied to an RTPC that changes the volume and adjusts a Low Pass Filter based on the occlusion.  
 
-
+&nbsp;&nbsp;&nbsp;
 
 ![Portal_Attenution_1!](/blogImages/Portal_Attenuation_1.png "Portal Attenuation 1") 
 ###### Figure 02. Portal Attenuation 01.
