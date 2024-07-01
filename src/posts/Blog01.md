@@ -1,9 +1,30 @@
-Certainly! Here is your text in Markdown format with the changes applied:
+---
+title: Lyra Sound Redesign Blog 1 - Ambience and Environment
+---
 
-```markdown
+
+![description](/blogImages/Blog0_Setting_Up.png)
+
+# Lyra Sound Redesign Blog 0 - Setting Up  
+
+# By Georgios Georgakis
+
+
+
+
+
+
+
+&nbsp;&nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;
+
 Hi!
 
-This is the first chapter of this blog series, and I’ll focus on the game’s environment and ambiance. These sounds include all the sounds that exist in the map that the player will hear without the need to interact with anything. Since Lyra is a fast-paced shooter, ambiance can easily be overlooked. However, background ambiance forms the crucial foundation on which everything else sits (Stevens and Raybould, 2016), and it deserves attention to detail.
+This is the first chapter of this blog series and I’ll focus on the game’s environment and ambience. These sounds include all the sounds that exist in the map that the player will hear without the need to interact with anything. Since Lyra is a fast paced shooter, ambience can easily be overlooked. However, background ambience forms the crucial foundations on which everything else sits (Stevens and Raybould, 2016), and it deserves attention to detail.
+
 
 First, let me show you an overview of the map:
 
@@ -11,9 +32,10 @@ First, let me show you an overview of the map:
 
 **Figure xx. Map overview [Player’s view]**
 
-The map is like a circular sky island consisting of two floors. There are three control points (A, B, and C) and an open building in the center.
+The map looks like a circular sky island consisting of two floors. There are three control points (A,B and C) and an open building in the centre. 
 
-The map is quite minimal without many sources to create noise. Other than what the map provided me with, I also added some sounds that do not necessarily have a visual representation but fit into the game nicely.
+The map is quite minimal without many sources to create noise. Other than what the map has provided me with, additional sounds that don't necessarily have a visual representation have been added to enhance the experience. 
+
 
 ### Ambience Structure
 
