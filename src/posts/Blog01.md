@@ -28,10 +28,9 @@ This is the first chapter of this blog series and I’ll focus on the game’s e
 
 First, let me show you an overview of the map:
 
-![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
-###### Figure xx. Map overview [top view].
-![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
-###### Figure xx. Map overview [Player’s view].
+![Lyra Control Asset List!](/blogImages/.png "Lyra Control Asset List") 
+###### Figure 01. Map overview [top view].
+
 
 The map looks like a circular sky island consisting of two floors. There are three control points (A,B and C) and an open building in the centre. 
 
@@ -60,10 +59,11 @@ The sound of the portal was the first sound I made for Lyra because it’s creat
 
 This source loop consists of four asynchronous loops creating a single loop that always evolves but never stops. Additionally, two of them use a very slow LFO (In Wwise) that subtly shifts the pitch of the affected loops. Also, two different attenuations are being used in Wwise to control how the sound changes depending on the character’s distance. Lastly, the sounds are tied to an RTPC that changes the volume and adjusts a Low Pass Filter based on the occlusion.  
 
-![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
-###### Figure xx. Portal_Attenuation 01.
-![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
-###### Figure xx. Portal_Attenuation 02.
+![Lyra Control Asset List!](/blogImages/Portal Attenuation 1.png "Portal Attenuation 1") 
+###### Figure 02. Portal_Attenuation 01.
+
+![Lyra Control Asset List!](/blogImages/Portal Attenuation 2.png "Portal Attenuation 2") 
+###### Figure 03. Portal_Attenuation 02.
 
 o play the portal loop sound UE5, simply we use the “Event Begin Play” node within the Teleport’s blueprint to a “Set Obstruction Occlusion Refresh Interval” node to basically turn off the Unreal Engine’s occlusion system and then a “Post Event” node is connected to play the Ak Event. 
 
@@ -116,7 +116,7 @@ The way this system is set in Unreal Engine, it checks every second for the play
 ![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
 ###### Figure xx. System that checking if the player is idle in "Birds_POS" blueprint.
 
-One extra thing I did was to adjust the audio listener. I realized while testing my sounds that the listener was my camera instead of my character. This is not a problem per se, but it results in panning  and distance feeling wrong sometimes. To make it sound better and more immersive, I overrode the audio listener following Bartosz Kamiński’s video (LINK) inside the character’s blueprint. Now, when the character runs past a spawner, its loudness will peak when my character is next to it rather than when the camera is.
+One extra thing I did was to adjust the audio listener. I realized while testing my sounds that the listener was my camera instead of my character. This is not a problem per se, but it results in panning  and distance feeling wrong sometimes. To make it sound better and more immersive, I overrode the audio listener following [Bartosz Kamiński’s video](https://www.youtube.com/watch?v=KBzHTX-9BvE) inside the character’s blueprint. Now, when the character runs past a spawner, its loudness will peak when my character is next to it rather than when the camera is.
 
 ###Conclusions
 
@@ -126,11 +126,11 @@ As always, feedback is more than welcomed!
 
 Thank you.
 
-*Camp: A multiplayer technique in shooters where the "camper" finds a relatively safe spot to stay at and pick off enemies as they enter the frame, rather than going out and seeking enemies to kill.
+*Camp: A multiplayer technique in shooters where the "camper" finds a relatively safe spot to stay at and pick off enemies as they enter the frame, rather than going out and seeking enemies to kill (DOJNDO, 2015).
 
 ### Bibliography
 
 Stevens, R. and Raybould, Dave. (2016) Game Audio Implementation : A Practical Guide Using the Unreal Engine [Online]. New York ; Focal Press. Available from: <https://www.taylorfrancis.com/books/e/9781315772783>.
 
-DOJNDO, et al. (2015) Camping - The Gaming Dictionary Guide [Online]. IGN. Available from: <https://www.ign.com/wikis/the-gaming-dictionary/Camping> [Accessed 01 July 2024].
+DOJNDO. (2015) Camping - The Gaming Dictionary Guide [Online]. IGN. Available from: <https://www.ign.com/wikis/the-gaming-dictionary/Camping> [Accessed 01 July 2024].
 ```
