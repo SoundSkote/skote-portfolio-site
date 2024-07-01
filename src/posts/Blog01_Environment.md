@@ -25,8 +25,12 @@ Hi!
 
 This is the first chapter of this blog series and I’ll focus on the game’s environment and ambience. These sounds include all the sounds that exist in the map that the player will hear without the need to interact with anything. Since Lyra is a fast paced shooter, ambience can easily be overlooked. However, background ambience forms the crucial foundations on which everything else sits (Stevens and Raybould, 2016), and it deserves attention to detail.
 
+&nbsp;&nbsp;&nbsp;
+
 
 First, let me show you an overview of the map:
+
+&nbsp;&nbsp;&nbsp;
 
 ![Map_Overview!](/blogImages/Map_Overview.png "Map_Overview") 
 ###### Figure 01. Map overview.
