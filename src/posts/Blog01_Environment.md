@@ -91,7 +91,7 @@ To create an ambience base for our map, a wind bed has been made. However, to av
 
 To add more depth to the general ambience, I added some wind gusts that are triggered when the player is close to the edge of the map.
 
-![Wind_Gusts_Colliders!](/blogImages/Wind_Gusts_Colliders.png "Wind_Gusts_Colliders") 
+![Wind_Gusts_Colliders!](/blogImages/Wind_Gusts_Boxes.png "Wind_Gusts_Colliders") 
 ###### Figure 07. Wind Gusts trigger boxes.
 
 I made a reusable blueprint that triggers player-oriented wind gusts whenever the player is within these boxes. So, when the player overlaps with the box, a timer will trigger the “Play_Wind_Gusts” custom event (within the time range set), which will spawn the wind gust sound around the player’s position. This helps us create an oriented sound in a randomized position but within our set limits.
