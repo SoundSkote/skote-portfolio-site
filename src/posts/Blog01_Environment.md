@@ -26,8 +26,6 @@ Hi!
 &nbsp;&nbsp;&nbsp;
 This is the first chapter of this blog series and I’ll focus on the game’s environment and ambience. These sounds include all the sounds that exist in the map that the player will hear without the need to interact with anything. Since Lyra is a fast paced shooter, ambience can easily be overlooked. However, background ambience forms the crucial foundations on which everything else sits (Stevens and Raybould, 2016), and it deserves attention to detail.
 
-&nbsp;&nbsp;&nbsp;
-
 
 First, let me show you an overview of the map:
 
@@ -55,8 +53,7 @@ The map looks like a circular sky island consisting of two floors. There are thr
 - Area wind
 - Some wind gusts (when the player is close to the edge)
 - Birds chirping (when the player is idle)
-- 
-&nbsp;&nbsp;&nbsp;
+  
 &nbsp;&nbsp;&nbsp;
 
 ### Source Loops
@@ -177,9 +174,16 @@ Overall, I think this makes a good foundation for my Lyra redesign, and I am hap
 
 As always, feedback is more than welcome!
 
+&nbsp;&nbsp;&nbsp; 
+
 **Thank you.**
 
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp; 
+
 *Camp: A multiplayer technique in shooters where the "camper" finds a relatively safe spot to stay at and pick off enemies as they enter the frame, rather than going out and seeking enemies to kill (DOJNDO, 2015).
+
+&nbsp;&nbsp;&nbsp; 
 
 ### Bibliography
 
