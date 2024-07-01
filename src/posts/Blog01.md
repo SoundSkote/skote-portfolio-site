@@ -28,9 +28,10 @@ This is the first chapter of this blog series and I’ll focus on the game’s e
 
 First, let me show you an overview of the map:
 
-**Figure xx. Map overview [top view]**
-
-**Figure xx. Map overview [Player’s view]**
+![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
+###### Figure xx. Map overview [top view].
+![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
+###### Figure xx. Map overview [Player’s view].
 
 The map looks like a circular sky island consisting of two floors. There are three control points (A,B and C) and an open building in the centre. 
 
@@ -51,7 +52,7 @@ The map is quite minimal without many sources to create noise. Other than what t
 - Some wind gusts (when the player is close to the edge)
 - Birds chirping (when the player is idle)
 
-#### Source Loops
+### Source Loops
 
 **Portal Loop**
 
@@ -59,42 +60,45 @@ The sound of the portal was the first sound I made for Lyra because it’s creat
 
 This source loop consists of four asynchronous loops creating a single loop that always evolves but never stops. Additionally, two of them use a very slow LFO (In Wwise) that subtly shifts the pitch of the affected loops. Also, two different attenuations are being used in Wwise to control how the sound changes depending on the character’s distance. Lastly, the sounds are tied to an RTPC that changes the volume and adjusts a Low Pass Filter based on the occlusion.  
 
-**Figure xx. Portal_Attenuation 01**
-**Figure xx. Portal_Attenuation 02**
+![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
+###### Figure xx. Portal_Attenuation 01.
+![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
+###### Figure xx. Portal_Attenuation 02.
 
 o play the portal loop sound UE5, simply we use the “Event Begin Play” node within the Teleport’s blueprint to a “Set Obstruction Occlusion Refresh Interval” node to basically turn off the Unreal Engine’s occlusion system and then a “Post Event” node is connected to play the Ak Event. 
 
-**Figure xx. Portal_Loop_SFX in B_Teleport blueprint**
+###### Figure xx. Portal_Loop_SFX in B_Teleport blueprint.
 
-**Spawners**
+### Spawners
 
 Similarly, the weapon/health item spawners use asynchronous loops that can be heard when the player gets close by. Again, attenuation and RTPCs have been created to simulate the change of sound based on distance and occlusion, and slow LFOs have been added in Wwise to subtly modulate the pitch over time. Unlike the static portal, spawners have a state where a weapon/health item is spawned and another state where they are recharging. Therefore, when this happens, we need to change the sound so the player will know that the spawner is ready or reloading.
 
-**Figure xx. Spawner play/stop system in B_AbilitySpawner blueprint**
+###### Figure xx. Spawner play/stop system in B_AbilitySpawner blueprint.
 
 All the spawners spawn in the game loaded. Using the “Event Begin Play” node the loaded weapon/health item loop will play and when a character picks up the weapon/health item the loop gets stopped and the second one starts playing. Respectively, when the spawner reloads the loading loop stops playing the other one starts.
 
-**General Area Wind**
+### General Area Wind
 
 
 To create an ambience base for our map, a wind bed has been made. However, to avoid making it very monotonous and uninteresting I optimised a few things. Firstly, I created a new actor blueprint and placed it above the center of the map. This felt like the most natural way to check if the player is behind a wall or not. This way, I was able to add occlusion to mask the wind when the player runs between buildings or hides on the lower floors. So, I implemented a simple occlusion system but I will talk more about the occlusion system in its own chapter. Additionally, to make it a bit more dynamic and exciting I also created a system where the sound will get louder and clearer based on the player’s height in the map. For example, if the player is on the lower floor, the wind will be very subtle, but as they move in higher positions, the wind will become much more present.
 
-
-**Figure xx. Wind ambience system based on player's height**
+![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
+###### Figure xx. Wind ambience system based on player's height.
 
 To add more depth to the general ambience, I added some wind gusts that are triggered when the player is close to the edge of the map.
 
-**Figure xx. Wind Gusts trigger boxes**
+![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
+###### Figure xx. Wind Gusts trigger boxes.
 
 I made a reusable blueprint that triggers player-oriented wind gusts whenever the player is within these boxes. So, when the player overlaps with the box, a timer will trigger the “Play_Wind_Gusts” custom event (within the time range set), which will spawn the wind gust sound around the player’s position. This helps us create an oriented sound in a randomized position but within our set limits.
 
+![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
+###### Figure xx. Wind Gusts Play/Stop system in "Wind_Gust_POS" blueprint.
 
-**Figure xx. Wind Gusts Play/Stop system in "Wind_Gust_POS" blueprint**
+![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
+###### Figure xx. Wind Gusts player-oriented spawning system in "Wind_Gust_POS" blueprint.
 
-
-**Figure xx. Wind Gusts player-oriented spawning system in "Wind_Gust_POS" blueprint**
-
-**Bird Chirping**
+### Bird Chirping
 
 Bird chirping may come last, but it's definitely not least! I am excited about this one because not only it provides an addition to the ambience and environment but also gives me the opportunity to implement it as a game mechanic. Let me explain.
 
@@ -104,16 +108,17 @@ As mentioned before, it is yet another player-oriented system, so the sounds spa
 
 In Wwise, I use two random containers under a blend container that include the bird chirping sounds. Again, their own attenuation and occlusion systems have been applied.
 
-
-**Figure xx. Birds play system in "Birds_POS" blueprint**
+![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
+###### Figure xx. Birds play system in "Birds_POS" blueprint.
 
 The way this system is set in Unreal Engine, it checks every second for the player’s velocity. If the player is not moving, the system will move forward and wait for some time (“Lyra Voices_Delay”) to check if the player will move. If the player hasn’t moved yet, they'll start to hear a bird. As the player stays idle, they’ll hear more and more birds chirping around them, and they’ll get louder to the point of being easily spotted, and they will start getting annoyed themselves.
 
-**Figure xx. System that checking if the player is idle in "Birds_POS" blueprint**
+![Lyra Control Asset List!](/blogImages/assetlist1.png "Lyra Control Asset List") 
+###### Figure xx. System that checking if the player is idle in "Birds_POS" blueprint.
 
 One extra thing I did was to adjust the audio listener. I realized while testing my sounds that the listener was my camera instead of my character. This is not a problem per se, but it results in panning  and distance feeling wrong sometimes. To make it sound better and more immersive, I overrode the audio listener following Bartosz Kamiński’s video (LINK) inside the character’s blueprint. Now, when the character runs past a spawner, its loudness will peak when my character is next to it rather than when the camera is.
 
-**Conclusions**
+###Conclusions
 
 Overall, I think this makes a good foundation for my Lyra redesign, and I am happy with the progress so far. I already started thinking about improvements and new features to add which is a good sign.  In my next blog, I’ll discuss how I handle animation-related sounds such as footsteps and how they can change based on different character states or floor textures.
 
@@ -123,7 +128,7 @@ Thank you.
 
 *Camp: A multiplayer technique in shooters where the "camper" finds a relatively safe spot to stay at and pick off enemies as they enter the frame, rather than going out and seeking enemies to kill.
 
-**Bibliography**
+### Bibliography
 
 Stevens, R. and Raybould, Dave. (2016) Game Audio Implementation : A Practical Guide Using the Unreal Engine [Online]. New York ; Focal Press. Available from: <https://www.taylorfrancis.com/books/e/9781315772783>.
 
