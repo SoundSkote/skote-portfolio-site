@@ -28,8 +28,8 @@ This is the first chapter of this blog series and I’ll focus on the game’s e
 
 First, let me show you an overview of the map:
 
-![Blog01_Environment!](/blogImages/Blog01_Environment.png "Blog01_Environment") 
-###### Figure 01. Map overview [top view].
+![Map_Overview!](/blogImages/Map_Overview.png "Map_Overview") 
+###### Figure 01. Map overview.
 
 
 The map looks like a circular sky island consisting of two floors. There are three control points (A,B and C) and an open building in the centre. 
