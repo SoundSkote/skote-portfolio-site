@@ -128,7 +128,7 @@ Overall, I think this makes a good foundation for my Lyra redesign, and I am hap
 
 As always, feedback is more than welcome!
 
-Thank you.
+**Thank you.**
 
 *Camp: A multiplayer technique in shooters where the "camper" finds a relatively safe spot to stay at and pick off enemies as they enter the frame, rather than going out and seeking enemies to kill (DOJNDO, 2015).
 
