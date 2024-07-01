@@ -3,7 +3,7 @@ title: Lyra Sound Redesign Blog 1 - Ambience and Environment
 ---
 
 
-![description](/blogImages/Blog0_Setting_Up.png)
+![description](/blogImages/Blog01_Environment.png)
 
 # Lyra Sound Redesign Blog 1 - Ambience and Environment
 
@@ -59,10 +59,10 @@ The sound of the portal was the first sound I made for Lyra because it’s creat
 
 This source loop consists of four asynchronous loops creating a single loop that always evolves but never stops. Additionally, two of them use a very slow LFO (In Wwise) that subtly shifts the pitch of the affected loops. Also, two different attenuations are being used in Wwise to control how the sound changes depending on the character’s distance. Lastly, the sounds are tied to an RTPC that changes the volume and adjusts a Low Pass Filter based on the occlusion.  
 
-![Lyra Control Asset List!](/blogImages/Portal Attenuation 1.png "Portal Attenuation 1") 
+![Portal Attenuation 1!](/blogImages/Portal Attenuation 1.png "Portal Attenuation 1") 
 ###### Figure 02. Portal_Attenuation 01.
 
-![Lyra Control Asset List!](/blogImages/Portal Attenuation 2.png "Portal Attenuation 2") 
+![Portal Attenuation 2!](/blogImages/Portal Attenuation 2.png "Portal Attenuation 2") 
 ###### Figure 03. Portal_Attenuation 02.
 
 o play the portal loop sound UE5, simply we use the “Event Begin Play” node within the Teleport’s blueprint to a “Set Obstruction Occlusion Refresh Interval” node to basically turn off the Unreal Engine’s occlusion system and then a “Post Event” node is connected to play the Ak Event. 
