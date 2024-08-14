@@ -9,7 +9,7 @@ author: "Georgios Georgakis"
 
 # Lyra Sound Redesign Blog 2 - Character Animations & Updates
 
-# By Georgios Georgakis
+## By Georgios Georgakis
 
 
 
