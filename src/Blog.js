@@ -12,14 +12,20 @@ function Blog() {
     const [posts, setPosts] = useState([]);
 
     const loadPosts = async () => {
-        const mdposts = await Promise.all(
-            markdownFiles.map(async (file) => {
-                const content = await fetch(file).then((res) => res.text());
-                return { content, fileName: file};
-            })
-        );
-        setPosts(mdposts);
-    };
+    const mdposts = await Promise.all(
+        markdownFiles.map(async (file) => {
+            const content = await fetch(file).then((res) => res.text());
+            const { attributes } = fm(content); // Extract the front matter
+            return { content, fileName: file, date: new Date(attributes.date) };
+        })
+    );
+
+    // Sort posts by date in descending order (latest first)
+    const sortedPosts = mdposts.sort((a, b) => b.date - a.date);
+
+    setPosts(sortedPosts);
+};
+
 
     useEffect(() => {
         loadPosts(); 
