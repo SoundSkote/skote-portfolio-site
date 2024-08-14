@@ -20,27 +20,29 @@ author: "Georgios Georgakis"
 &nbsp;&nbsp;&nbsp;
 
 
-This blog will cover player animation sounds such as running, dashing, and jumping on different surfaces, as well as some updates on the project's progress.
+This blog will cover character animation sounds such as running, dashing, and jumping on different surfaces, as well as some updates on the project's progress.
 
 &nbsp;&nbsp;&nbsp;
 
 ## Updates
-&nbsp;&nbsp;&nbsp;
+
 
 I've already started updating previous work, and I’ll quickly cover the two most notable updates: the audio listener update and the birds update.
 &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
 ### Audio Listener Update
-&nbsp;&nbsp;&nbsp;
 
 While the audio listener worked fine during solo play, I encountered a problem when adding NPCs. Often, the audio listener would attach to the NPCs instead of the player, resulting in an unplayable experience. I believe this occurred because Lyra uses the same character blueprint for every character in the game. Therefore, when multiple characters were present, the system couldn’t distinguish which character I intended to use as the listener.
 
 This issue was resolved by checking the name string of each character upon spawning. Dec Birchall helped me find this straightforward solution: by checking the name of each character as it spawns, we can determine which character is playable and attach the listener to the player.
+&nbsp;&nbsp;&nbsp;
 
 ![Map_Overview!](/blogImages/AudioListener.png "AudioListener") 
 ###### Figure 01. Printing the “Get Display Name” node on screen allows us to view each character’s name.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
 ![Map_Overview!](/blogImages/AudioListenerUpdate.png "AudioListenerUpdate") 
 ###### Figure 02. The “Get_Player” patch helps us locate who the player is.
@@ -49,6 +51,9 @@ This issue was resolved by checking the name string of each character upon spawn
 &nbsp;&nbsp;&nbsp;
 
 This solution is an easy way to identify the player character, but it is limited to scenarios involving NPCs. While this is perfectly fine for the scope of this project, it should be noted that in a multiplayer game with other playable characters, this solution would not be sufficient.
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
 
 ### Birds Update (Emitter Automation)
@@ -162,7 +167,6 @@ However, I did manage to differentiate between the player and NPCs using the sam
 
 ## Problems
 
-&nbsp;&nbsp;&nbsp;
 
 ### Friend Or Foe
 
