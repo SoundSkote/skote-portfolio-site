@@ -9,7 +9,7 @@ author: "Georgios Georgakis"
 
 # Lyra Sound Redesign Blog 0 - Setting Up  
 
-# By Georgios Georgakis
+## By Georgios Georgakis
 
 
 
