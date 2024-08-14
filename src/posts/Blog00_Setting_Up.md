@@ -1,5 +1,7 @@
 ---
 title: Lyra Sound Redesign Blog 0 - Setting Up
+date: 2024-06-15
+author: "Georgios Georgakis"
 ---
 
 
