@@ -20,11 +20,16 @@ title: Lyra Sound Redesign Blog 2 - Character Animations & Updates
 
 This blog will cover player animation sounds such as running, dashing, and jumping on different surfaces, as well as some updates on the project's progress.
 
+&nbsp;&nbsp;&nbsp;
+
 ## Updates
+&nbsp;&nbsp;&nbsp;
 
 I've already started updating previous work, and I’ll quickly cover the two most notable updates: the audio listener update and the birds update.
+&nbsp;&nbsp;&nbsp;
 
 ### Audio Listener Update
+&nbsp;&nbsp;&nbsp;
 
 While the audio listener worked fine during solo play, I encountered a problem when adding NPCs. Often, the audio listener would attach to the NPCs instead of the player, resulting in an unplayable experience. I believe this occurred because Lyra uses the same character blueprint for every character in the game. Therefore, when multiple characters were present, the system couldn’t distinguish which character I intended to use as the listener.
 
@@ -33,8 +38,13 @@ This issue was resolved by checking the name string of each character upon spawn
 ![Map_Overview!](/blogImages/AudioListener.png "AudioListener") 
 ###### Figure 01. Printing the “Get Display Name” node on screen allows us to view each character’s name.
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 ![Map_Overview!](/blogImages/AudioListenerUpdate.png "AudioListenerUpdate") 
 ###### Figure 02. The “Get_Player” patch helps us locate who the player is.
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
 This solution is an easy way to identify the player character, but it is limited to scenarios involving NPCs. While this is perfectly fine for the scope of this project, it should be noted that in a multiplayer game with other playable characters, this solution would not be sufficient.
 
@@ -46,6 +56,8 @@ In this update, I used emitter automation in Wwise to give the bird sounds more 
 ![Map_Overview!](/blogImages/Lyra_Birds_Automation.png "Lyra_Birds_Automation") 
 ###### Figure 03. Path example in Emitter with Automation 3D Position.
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 ## New Additions - Character Animations
 
 ### Surfaces
@@ -55,10 +67,16 @@ Before adding any sounds, it’s important to know what surfaces the player will
 ![Map_Overview!](/blogImages/PM.png "Physical Materials") 
 ###### Figure 04. Screenshots of Physical Materials set in Unreal Engine 5.
 
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
 After creating the physical materials in Unreal Engine, I assigned each surface to its corresponding material and made a switch container in Wwise for the footstep sounds.
 
 ![Map_Overview!](/blogImages/Surfaces.png "Surfaces") 
 ###### Figure 05. The different surfaces in the map.
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
 ### Animations
 
@@ -67,6 +85,9 @@ The audio system for the animations is built using notifiers. I went through all
 ![Map_Overview!](/blogImages/Notifiers.png "Notifiers") 
 ###### Figure 06. Notifiers in “MM_Pistol_Jog_Bwd_Start”.
 
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
 Once that was done, I created the necessary blueprints in the animation’s Event Graph. Now, each notifier triggers the respective Wwise event or Wwise switch.
 
 For example, here is the blueprint for the running animation:
@@ -74,13 +95,22 @@ For example, here is the blueprint for the running animation:
 ![Map_Overview!](/blogImages/Footsteps_BP_1_2.png "Footsteps_BP_1_2") 
 ###### Figure 07. Footsteps blueprint patch in Animation Blueprint 1-2.
 
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
 ![Map_Overview!](/blogImages/Footsteps_BP_2_2.png "Footsteps_BP_2_2") 
 ###### Figure 08. Footsteps blueprint patch in Animation Blueprint 2-2.
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
 The system begins by creating a line trace that checks the physical material of the floor with each step and sets the switch container in Wwise accordingly. Next, it checks whether the character is crouching or not. To switch between running and crouch-walking, a branch node checks the player’s crouch status and changes the Wwise crouch switch container accordingly. Then, we remove any unnecessary occlusion coming from Unreal Engine and trigger the footstep sound. This system allows all the mentioned possibilities to change dynamically and seamlessly.
 
 ![Map_Overview!](/blogImages/Fs_Wwise.png "Footstep_Switch_Container") 
 ###### Figure 09. “Player_Fs” Switch container in Wwise.
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
 ### Foley
 
@@ -93,8 +123,14 @@ As with every other sound, all the characters’ sounds are occluded when they m
 ![Map_Overview!](/blogImages/Check_Z_Axis.png "Check_Z_Axis") 
 ###### Figure 10. Blueprint patch comparing characters’ Z-axis and setting the “Occlusion_Footsteps_Z_Axis” RTPC.
 
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
 ![Map_Overview!](/blogImages/Z_Axis_wise.png "Z_Axis_Wwise") 
 ###### Figure 11. Voice Pitch change based on “Occlusion_Footsteps_Z_Axis” RTPC.
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
 Originally, I wanted to create different occlusion settings and mixes between enemies and friendly players, but I couldn’t find a way to check if the NPC is hostile or friendly. I’ll discuss this problem in more detail in the “Problems” section of this blog.
 
@@ -103,8 +139,14 @@ However, I did manage to differentiate between the player and NPCs using the sam
 ![Map_Overview!](/blogImages/NPC_Meter_Effect.png "NPC_Meter_Effect") 
 ###### Figure 12. Meter effect on the NPC bus in Wwise.
 
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
 ![Map_Overview!](/blogImages/Player_Bus_Sidechain.png "Player_Bus_Sidechain") 
 ###### Figure 13. Bus Volume and Voice High-pass Filter on the Player bus based on sidechain in Wwise.
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
 ## Problems
 
