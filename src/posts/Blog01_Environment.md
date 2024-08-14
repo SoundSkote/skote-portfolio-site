@@ -9,7 +9,7 @@ author: "Georgios Georgakis"
 
 # Lyra Sound Redesign Blog 1 - Ambience and Environment
 
-# By Georgios Georgakis
+## By Georgios Georgakis
 
 
 
