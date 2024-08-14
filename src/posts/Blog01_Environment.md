@@ -1,5 +1,7 @@
 ---
 title: Lyra Sound Redesign Blog 1 - Ambience and Environment
+date: 2024-07-15
+author: "Georgios Georgakis"
 ---
 
 
