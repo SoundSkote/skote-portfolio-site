@@ -126,7 +126,7 @@ As with every other sound, all the characters’ sounds are occluded when they m
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 
-![Map_Overview!](/blogImages/Z_Axis_wise.png "Z_Axis_Wwise") 
+![Map_Overview!](/blogImages/Check_Z_Axis_wise.png "Z_Axis_Wwise") 
 ###### Figure 11. Voice Pitch change based on “Occlusion_Footsteps_Z_Axis” RTPC.
 
 &nbsp;&nbsp;&nbsp;
