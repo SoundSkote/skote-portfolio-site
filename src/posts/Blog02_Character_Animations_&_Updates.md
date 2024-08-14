@@ -1,5 +1,7 @@
 ---
 title: Lyra Sound Redesign Blog 2 - Character Animations & Updates
+date: 2024-08-14
+author: "Georgios Georgakis"
 ---
 
 
