@@ -21,7 +21,6 @@ author: "Georgios Georgakis"
 
 Hello!
 
-&nbsp;&nbsp;&nbsp;
 
 This blog will cover character animation sounds such as running, dashing, and jumping on different surfaces, as well as some updates on the project's progress.
 
