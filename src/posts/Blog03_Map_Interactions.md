@@ -43,7 +43,7 @@ Starting with the simpler elements to implement, launchers trigger a sound whene
 In the [**first blog**](https://www.georgiosaudio.com/blog/Blog01_Environment), I mentioned the spawners, where I discussed the game’s ambience and environment. In this blog, I’ll show how I further modified the same blueprints to trigger pickup sounds accurately, depending on what weapon the player is picking up, whether they are collecting extra ammo, or if they already own the weapon.
 
 
-The Health Pick-Ups basically work exactly as the launchers (see figure xx) but they use the “GCN_Character_Heal” blueprint which is triggered only when the character has taken damage and therefore can heal. 
+The Health Pick-Ups basically work exactly as the launchers (see Figure 01) but they use the “GCN_Character_Heal” blueprint which is triggered only when the character has taken damage and therefore can heal. 
 
 The Weapon pickups are more interesting because they spawn either a rifle or a shotgun creating a bit more complex system. If the player owns the weapon already, they will receive ammo for the corresponding weapon, but only if they aren't full.  Hence, a system needs to be set up to check all the conditions when the player interacts with the weapon spawners, based on the player’s inventory.
 
@@ -84,7 +84,7 @@ The interaction with the portal is another important sound in the game, as it gi
 The idea here is to play the character entry sound whenever a character enters the portal and another sound for grenades. A third sound just for NPCs could have been used but using an RTPC to swap between 2D and 3D spatialization seemed a lighter alternative for the memory than to load an extra sound.  
 
 
-The blueprint logic is straightforward. When there’s an overlap, it checks what triggered the portal. If it is the player, the “Portal_Entry_Spatialization” RTPC is used to adjust the “3D Spatialization Mix” in Wwise and trigger the sound. If not, it can either be another character such as an NPC or a grenade.if it is a grenade going through the portal, it plays the corresponding sound. The grenade’s spatialization is being controlled by its attenuation spread (figure xx) as it only changes by the distance. If it isn’t the grenade nor the player, we can safely assume to be another character. In that case, the RTPC value is set to 0 to and the sould will be heard as 3D. 
+The blueprint logic is straightforward. When there’s an overlap, it checks what triggered the portal. If it is the player, the “Portal_Entry_Spatialization” RTPC is used to adjust the “3D Spatialization Mix” (Figure 07) in Wwise and trigger the sound. If not, it can either be another character such as an NPC or a grenade. If it is a grenade going through the portal, it plays the corresponding sound. The grenade’s spatialization is being controlled by its attenuation spread (Figure x8) as it only changes by the distance. If it isn’t the grenade nor the player, we can safely assume to be another character. In that case, the RTPC value is set to 0 to and the sould will be heard as 3D. 
 
 ![Map_Overview!](/blogImages/Bl03_Portal_Entry.png "Portal_Entry_SFX") 
 ###### Figure 06. Triggering the portal entry sound in the “B_Teleport” blueprint.
@@ -195,10 +195,10 @@ The basic idea is that the capturing sound stops when the point is claimed, the 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 
-At this point, when the sound needs to be stopped the “GG_Exit_Capture_Audio” custom event is being triggered. This can be seen in Figure xx where the Capture Value equals 0 (figure xx), or when the player exits the point (figure xx and xx). The stopping sound also gets stopped when the point gets owned. Since there are multiple ways to trigger the “GG_Exit_Capture_Audio” event, these checks ensure the sound won’t stop prematurely.
+At this point, when the sound needs to be stopped the “GG_Exit_Capture_Audio” custom event is being triggered. This can be seen in Figure 16 where the Capture Value equals 0, or when the player exits the point (Figure 12 & 17). The stopping sound also gets stopped when the point gets owned. Since there are multiple ways to trigger the “GG_Exit_Capture_Audio” event, these checks ensure the sound won’t stop prematurely.
 
 
-In Figure xx, you can see that when the “GG_Exit_Capture_Audio” custom event is triggered, there are three steps before the sound stops. First, a short delay ensures that if two players from different teams are in the point, and one leaves while the capture value is at 0, the timer has time to increase again, preventing the sound from stopping. Then, we use a branch to check whether the capture value is greater than or equal to 0.01, meaning the capturing sound will continue until the value reaches 0.Lastly, another branch checks for team overlap in the capture point, using Lyra’s recompute system (figure xx).
+In Figure x7, you can see that when the “GG_Exit_Capture_Audio” custom event is triggered, there are three steps before the sound stops. First, a short delay ensures that if two players from different teams are in the point, and one leaves while the capture value is at 0, the timer has time to increase again, preventing the sound from stopping. Then, we use a branch to check whether the capture value is greater than or equal to 0.01, meaning the capturing sound will continue until the value reaches 0.Lastly, another branch checks for team overlap in the capture point, using Lyra’s recompute system (Figure 18).
 
 ![Map_Overview!](/blogImages/Bl03_Overlapping.png "Overlapping_Teams") 
 ###### Figure 18. Setting the overlapping variable based on the number of teams within the capture point. 
