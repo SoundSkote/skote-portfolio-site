@@ -40,7 +40,7 @@ Starting with the simpler elements to implement, launchers trigger a sound whene
 ## Health and Weapon Pickups 
 
 
-In the first blog [add link], I mentioned the spawners, where I discussed the game’s ambience and environment. In this blog, I’ll show how I further modified the same blueprints to trigger pickup sounds accurately, depending on what weapon the player is picking up, whether they are collecting extra ammo, or if they already own the weapon.
+In the [**first blog**](https://www.georgiosaudio.com/blog/Blog01_Environment), I mentioned the spawners, where I discussed the game’s ambience and environment. In this blog, I’ll show how I further modified the same blueprints to trigger pickup sounds accurately, depending on what weapon the player is picking up, whether they are collecting extra ammo, or if they already own the weapon.
 
 
 The Health Pick-Ups basically work exactly as the launchers (see figure xx) but they use the “GCN_Character_Heal” blueprint which is triggered only when the character has taken damage and therefore can heal. 
