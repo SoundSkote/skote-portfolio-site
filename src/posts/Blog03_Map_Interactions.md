@@ -200,7 +200,7 @@ At this point, when the sound needs to be stopped the “GG_Exit_Capture_Audio�
 
 In Figure xx, you can see that when the “GG_Exit_Capture_Audio” custom event is triggered, there are three steps before the sound stops. First, a short delay ensures that if two players from different teams are in the point, and one leaves while the capture value is at 0, the timer has time to increase again, preventing the sound from stopping. Then, we use a branch to check whether the capture value is greater than or equal to 0.01, meaning the capturing sound will continue until the value reaches 0.Lastly, another branch checks for team overlap in the capture point, using Lyra’s recompute system (figure xx).
 
-![Map_Overview!](/blogImages/Overlapping.png "Overlapping_Teams") 
+![Map_Overview!](/blogImages/Bl03_Overlapping.png "Overlapping_Teams") 
 ###### Figure 18. Setting the overlapping variable based on the number of teams within the capture point. 
 
 &nbsp;&nbsp;&nbsp;
