@@ -43,9 +43,9 @@ Starting with the simpler elements to implement, launchers trigger a sound whene
 In the [**first blog**](https://www.georgiosaudio.com/blog/Blog01_Environment), I mentioned the spawners, where I discussed the game’s ambience and environment. In this blog, I’ll show how I further modified the same blueprints to trigger pickup sounds accurately, depending on what weapon the player is picking up, whether they are collecting extra ammo, or if they already own the weapon.
 
 
-The Health Pick-Ups basically work exactly as the launchers (see Figure 01) but they use the “GCN_Character_Heal” blueprint which is triggered only when the character has taken damage and therefore can heal. 
+The health pickups system essentially works like the launchers (see Figure 01) but they use the “GCN_Character_Heal” blueprint which is triggered only when the character has taken damage and therefore can heal. 
 
-The Weapon pickups are more interesting because they spawn either a rifle or a shotgun creating a bit more complex system. If the player owns the weapon already, they will receive ammo for the corresponding weapon, but only if they aren't full.  Hence, a system needs to be set up to check all the conditions when the player interacts with the weapon spawners, based on the player’s inventory.
+The weapon pickups are more interesting because they spawn either a rifle or a shotgun creating a more complex system. If the player owns the weapon already, they will receive ammo for the corresponding weapon, but only if they aren't full.  Hence, a system needs to be set up to check all the conditions when the player interacts with the weapon spawners, based on the player’s inventory.
 
 ![Map_Overview!](/blogImages/Bl03_Weapon_Spawner_Mind_Map.png "Weapon_Spawner_Mind_Map") 
 ###### Figure 02. Weapon Spawner Mind Map.
@@ -53,7 +53,7 @@ The Weapon pickups are more interesting because they spawn either a rifle or a s
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 
-Firstly, when the player overlaps, the system checks whether the player owns the weapon. If not, the player gets the weapon. If they already own the weapon, it checks whether they are full of ammo. If the player has full ammo for that weapon, then nothing happens; If not, then they’ll get more ammo for the corresponding weapon.
+Firstly, when the player overlaps with the weapon spawner, the system checks whether the player owns the weapon. If not, the player gets the weapon. If they already own the weapon, it checks whether they are full of ammo. If the player has full ammo for that weapon, then nothing happens; If not, then they’ll get more ammo for the corresponding weapon.
 
 ![Map_Overview!](/blogImages/Bl03_Weapon_Spawner1.png "Weapon_Spawner1") 
 ###### Figure 03. “B_WeaponSpawner” Event Graph Blueprint.
@@ -61,6 +61,7 @@ Firstly, when the player overlaps, the system checks whether the player owns the
 &nbsp;&nbsp;&nbsp;
 
 &nbsp;&nbsp;&nbsp;
+
 Using the blueprint’s event graph we can easily check whether the weapon is a rifle or a shotgun based on the mesh’s name and then trigger the appropriate sound. If the player already owns the weapon, the weapon pickup sound will not play. However, it still needs to check whether the player needs ammo. For this reason, the Give Weapon function that has been made by the original developers is being used, and allows us to set what kind of ammo will the player receive, based on what mesh the spawner spawns. 
 
 
@@ -73,7 +74,7 @@ Using the blueprint’s event graph we can easily check whether the weapon is a 
 
 ## Portal
 
-The interaction with the portal is another important sound in the game, as it gives audio information to other players when used. While testing the game, I discovered that not only does it teleport characters, but it also teleports grenades! This makes the portals an easy way to flank, so pinpointing which portal was used is crucial. Therefore, this sound needs to be spatialized. However, I didn’t like how it sounded when the player used it, so I decided to adjust the stereo information based on who or what is using the portal. 
+The interaction with the portal is another important sound in the game, as it gives audio information to other players when used. While testing the game, I discovered that not only does it teleport characters, but it also teleports grenades! Portals are an easy way to flank, so pinpointing which portal was used is crucial. Therefore, this sound needs to be spatialized. However, I didn’t like how it sounded when the player used it, so I decided to adjust the stereo information based on who or what is using the portal. 
 
 ![Map_Overview!](/blogImages/Bl03_Portal_Entry_MM.png "Portal_Entry_Mind_Map") 
 ###### Figure 05. Portal Entry Mind Map.
@@ -81,10 +82,10 @@ The interaction with the portal is another important sound in the game, as it gi
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 
-The idea here is to play the character entry sound whenever a character enters the portal and another sound for grenades. A third sound just for NPCs could have been used but using an RTPC to swap between 2D and 3D spatialization seemed a lighter alternative for the memory than to load an extra sound.  
+The idea here is to play the character entry sound whenever a character enters the portal and another sound for grenades. A third sound just for NPCs could have been used but using an RTPC to swap between 2D and 3D spatialization seemed a better alternative for the memory than to load an extra sound.  
 
 
-The blueprint logic is straightforward. When there’s an overlap, it checks what triggered the portal. If it is the player, the “Portal_Entry_Spatialization” RTPC is used to adjust the “3D Spatialization Mix” (Figure 07) in Wwise and trigger the sound. If not, it can either be another character such as an NPC or a grenade. If it is a grenade going through the portal, it plays the corresponding sound. The grenade’s spatialization is being controlled by its attenuation spread (Figure 08) as it only changes by the distance. If it isn’t the grenade nor the player, we can safely assume to be another character. In that case, the RTPC value is set to 0 to and the sould will be heard as 3D. 
+The blueprint logic is straightforward. When there’s an overlap, it checks what triggered the portal. If it is the player, the “Portal_Entry_Spatialization” RTPC is used to adjust the “3D Spatialization Mix” in Wwise (Figure 07) and trigger the sound. If not, it can either be another character such as an NPC or a grenade. If it is a grenade going through the portal, it plays the corresponding sound. The grenade’s spatialization is being controlled by its attenuation spread (Figure 08) as it only changes by the distance. If it isn’t the grenade nor the player, we can safely assume to be another character. In that case, the RTPC value is set to 0 to and the sound will become 3D. 
 
 ![Map_Overview!](/blogImages/Bl03_Portal_Entry.png "Portal_Entry_SFX") 
 ###### Figure 06. Triggering the portal entry sound in the “B_Teleport” blueprint.
@@ -107,7 +108,7 @@ The blueprint logic is straightforward. When there’s an overlap, it checks wha
 
 ## Control Point
 
-The control point is definitely the most interesting system in this blog, as it is the most complex mechanism but also quite standard for many multiplayer shooters, from older games like the Call of Duty series (Capture the Flag mode) to more recent ones like xDefiant (Domination mode). The goal of this mode is to capture and control the three points on the map for as long as possible, scoring points in the process. The first team to reach 125 points wins!
+The control point is definitely the most interesting system in this blog, as it is the most complex mechanism but also quite standard for many multiplayer shooters, from older games like the *Call of Duty* series (Capture the Flag mode) to more recent ones like *xDefiant* (Domination mode). The goal of this mode is to capture and control the three points on the map for as long as possible, scoring points in the process. The first team to reach 125 points wins!
 
 ![Map_Overview!](/blogImages/Blog03_Map_Interactions.png "Control Point") 
 ###### Figure 09. A screenshot of a control point in the map.
@@ -117,7 +118,7 @@ The control point is definitely the most interesting system in this blog, as it 
 
 ### Capturing Control Points
 
-Each control point’s capturing value starts increasing when a character enters the point, with a minimum value of 0 and a maximum of 1. If a character stays until the control point is fully charged, they’ll capture it. Once it's captured, it will start giving points to the owning team. However, If the team exits without having captured the point or another team comes in the control point while being captured, the value will start to decrease and will stay 0 until only one team is present. If both teams leave, the value resets to 0, deactivating the point or if captured, remaining to the owner’s team.
+Each control point’s capturing value starts increasing when a character enters the point, with a minimum value of 0 and a maximum of 1. If a character stays until the control point is fully charged, they’ll capture it. Once it's captured, it will start giving points to the owning team. However, if the team exits without capturing the point or another team enters during the capture process, the value starts to decrease. It will stay at 0 until only one team is present. If both teams leave, the value resets to 0, deactivating the point. If captured, the control point remains owned by the capturing team.
 
 ![Map_Overview!](/blogImages/Bl03_Control_Point_MindMap.png "Control_Point_Mind_Map") 
 ###### Figure 10. Control Point Mind Map.
@@ -128,7 +129,7 @@ Each control point’s capturing value starts increasing when a character enters
 
 ### Entering the Capture Point
 
-I hooked two “call function” nodes at the end of “On ComponentBegin Overlap” and “On ComponentEnd Overlap” respectively. These trigger my custom events responsible for starting and stopping the sound of the point being captured. 
+I hooked two call function nodes at the end of “On ComponentBegin Overlap” and “On ComponentEnd Overlap” respectively. These trigger my custom events responsible for starting and stopping the sound of the point being captured. 
 &nbsp;&nbsp;&nbsp;
 
 ![Map_Overview!](/blogImages/Bl03_Exit_Point_1_2.png "Exit_Point_1_2") 
@@ -144,7 +145,7 @@ I hooked two “call function” nodes at the end of “On ComponentBegin Overla
 &nbsp;&nbsp;&nbsp;
 
 
-When a character enters the capture point, my custom event is triggered. The first thing it checks is the character’s team. If the character’s team owns the control point, nothing happens. Otherwise, it starts capturing the point and the sound begins to play.
+When a character enters the capture point, the “GG_Enter_Capture_Audio” custom event is triggered. The first thing it checks is the character’s team. If the character’s team owns the control point, nothing happens. Otherwise, it starts capturing the point and the sound begins to play.
 
 
 ![Map_Overview!](/blogImages/Bl03_Enter_Control_Point.png "Enter_Control_Point") 
@@ -156,11 +157,17 @@ When a character enters the capture point, my custom event is triggered. The fir
 
 ### Capturing the Point
 
-Using data from “TL”ConvertPoint”, we can get the capture value ranging from 0.00 to 1.00. This value is sent to an RTPC, allowing for a more dynamic audio response to the capturing sound.
+Using data from “TL”ConvertPoint”, we can get the capture value ranging from 0.00 to 1.00. This value is sent to an RTPC, allowing for a more dynamic audio response to the capturing sound by increasing or decreasing the volume and the pitch of the sound in real time.
 
 
 ![Map_Overview!](/blogImages/Bl03_Control_Point_RTPC.png "Control_Point_RTPC") 
 ###### Figure 14. Sending the "Capture" value to "ControlPoints_Value" RTPC in Wwise.
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
+![Map_Overview!](/blogImages/Bl03_Control_Point_RTPC.png "Control_Point_RTPC") 
+###### Figure 15. Sending the "Capture" value to "ControlPoints_Value" RTPC in Wwise.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
@@ -171,7 +178,7 @@ Once a team captures a control point, the point gets owned by that team. When th
 
 
 ![Map_Overview!](/blogImages/Bl03_Capture_Point.png "Capture_Point") 
-###### Figure 15. Triggering the captured sound using "GG_Audio_Capture" custom event.
+###### Figure 16. Triggering the captured sound using "GG_Audio_Capture" custom event.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
@@ -182,7 +189,7 @@ Once a team captures a control point, the point gets owned by that team. When th
 One of the trickiest parts is managing every possible situation when multiple teams overlap at a control point—especially when it comes to stopping the capturing sound. 
 
 ![Map_Overview!](/blogImages/Bl03_Stop_Capture.png "Stop_Capture") 
-###### Figure 16. Triggering "GG_Exit_Capture_Audio" when capture value equals 0.
+###### Figure 17. Triggering "GG_Exit_Capture_Audio" when capture value equals 0.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
@@ -190,18 +197,18 @@ One of the trickiest parts is managing every possible situation when multiple te
 The basic idea is that the capturing sound stops when the point is claimed, the value reaches 0, or all teams exit the point. However, these cases might overlap. For example, we need to stop the capturing sound when a player exits, but not if there’s still another player inside. For this reason, a number of checks are required before stopping the sound.
 
 ![Map_Overview!](/blogImages/Bl03_Enter_Exit_Point.png "Enter_Exit_Point") 
-###### Figure 17. "GG_Enter_Capture_Audio" and "GG_Exit_Capture_Audio" custom events system. 
+###### Figure 18. "GG_Enter_Capture_Audio" and "GG_Exit_Capture_Audio" custom events system. 
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 
-At this point, when the sound needs to be stopped the “GG_Exit_Capture_Audio” custom event is being triggered. This can be seen in Figure 16 where the Capture Value equals 0, or when the player exits the point (Figure 12 & 17). The stopping sound also gets stopped when the point gets owned. Since there are multiple ways to trigger the “GG_Exit_Capture_Audio” event, these checks ensure the sound won’t stop prematurely.
+At this point, when the sound needs to be stopped the “GG_Exit_Capture_Audio” custom event is being triggered. This can be seen in Figure 17 where the Capture Value equals 0, or when the player exits the point (Figure 12 & 18). The stopping sound also gets stopped when the point gets owned. Since there are multiple ways to trigger the “GG_Exit_Capture_Audio” event, these checks ensure the sound won’t stop prematurely.
 
 
-In Figure 07, you can see that when the “GG_Exit_Capture_Audio” custom event is triggered, there are three steps before the sound stops. First, a short delay ensures that if two players from different teams are in the point, and one leaves while the capture value is at 0, the timer has time to increase again, preventing the sound from stopping. Then, we use a branch to check whether the capture value is greater than or equal to 0.01, meaning the capturing sound will continue until the value reaches 0.Lastly, another branch checks for team overlap in the capture point, using Lyra’s recompute system (Figure 18).
+In Figure 07, you can see that when the “GG_Exit_Capture_Audio” custom event is triggered, there are three steps before the sound stops. First, a short delay ensures that if two players from different teams are in the point, and one leaves while the capture value is at 0, the timer has time to increase again, preventing the sound from stopping. Then, we use a branch to check whether the capture value is greater than or equal to 0.01, meaning the capturing sound will continue until the value reaches 0.Lastly, another branch checks for team overlap in the capture point, using Lyra’s recompute system (Figure 19).
 
 ![Map_Overview!](/blogImages/Bl03_Overlapping.png "Overlapping_Teams") 
-###### Figure 18. Setting the overlapping variable based on the number of teams within the capture point. 
+###### Figure 19. Setting the overlapping variable based on the number of teams within the capture point. 
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
