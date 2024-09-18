@@ -161,13 +161,13 @@ Using data from “TL”ConvertPoint”, we can get the capture value ranging fr
 
 
 ![Map_Overview!](/blogImages/Bl03_Control_Point_RTPC.png "Control_Point_RTPC") 
-###### Figure 14. Sending the "Capture" value to "ControlPoints_Value" RTPC in Wwise.
+###### Figure 14. Sending the "Capture" value to "ControlPoints_Value" RTPC in Blueprints.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 
-![Map_Overview!](/blogImages/Bl03_Control_Point_RTPC.png "Control_Point_RTPC") 
-###### Figure 15. Sending the "Capture" value to "ControlPoints_Value" RTPC in Wwise.
+![Map_Overview!](/blogImages/Bl03_ControlPoints_Value_RTPC.png "ControlPoints_Value_RTPC") 
+###### Figure 15. Using the "ControlPoints_Value" RTPC to change the volume and pitch of the sound in Wwise.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
