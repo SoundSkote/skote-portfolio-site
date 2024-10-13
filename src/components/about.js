@@ -38,8 +38,8 @@ function About() {
               <li>SPINE</li>
               <li>Still Wakes the Deep</li>
               <li>Vampire: The Masquerade - Bloodlines 2</li>
-              <li>Silent Hill 2 remake</li>
-              <li>Retrieval</li>
+              <li>Silent Hill 2 Remake</li>
+              <li>Deadlock</li>
             </ul>
             <ul className='lg:w-1/3'>
               <li className='font-extrabold underline pb-5 list-none'>My hobbies:</li>
