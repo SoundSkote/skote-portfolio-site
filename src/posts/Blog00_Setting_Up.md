@@ -5,13 +5,12 @@ author: "Georgios Georgakis"
 ---
 
 
-![description](/blogImages/assetlist1.png.png)
+![description](/blogImages/Blog04_Weapons_Part_1.png)
+
 
 # Lyra Sound Redesign Blog 0 - Setting Up  
 
 ## By Georgios Georgakis
-
-
 
 
 
