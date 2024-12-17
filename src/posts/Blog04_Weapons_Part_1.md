@@ -1,8 +1,9 @@
-![Weapon_Running](https://github.com/user-attachments/assets/f65245e5-0ebf-4db9-a82d-7d5f78dd4e43)---
-title: Lyra Sound Redesign Blog 3 - Map Interactions
-date: 2024-09-18
+---
+title: Lyra Sound Redesign Blog 4 - Weapons (Part 1)
+date: 2024-12-15
 author: "Georgios Georgakis"
 ---
+
 
 
 ![description](/blogImages/Blog04_Weapons_Part_1.png)
