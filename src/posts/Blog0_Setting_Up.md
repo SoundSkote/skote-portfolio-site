@@ -5,7 +5,7 @@ author: "Georgios Georgakis"
 ---
 
 
-![description](/blogImages/Blog04_Weapons_Part_1.png)
+![description](/blogImages/Blog0_Setting_Up.png)
 
 
 # Lyra Sound Redesign Blog 0 - Setting Up  
