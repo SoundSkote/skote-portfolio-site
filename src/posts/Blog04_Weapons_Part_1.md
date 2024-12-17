@@ -233,4 +233,9 @@ To reflect on the ammo left in the weapon’s magazine and translate this inform
 
 Redesigning the weapon systems and their sound design was absolutely fun but also proved to be a delicate challenge. Things would easily misbehave or not sound quite right the first time so there was a lot of fine-tuning. Nevertheless, I’m happy with the outcome so far! The next part of the weapon redesign will focus on the bullet whiz/flybys and sounds such as getting damaged, dealing damage, or headshotting. 🎯
 
+Any feedback is always appreciated!
+
 Thank you!
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
