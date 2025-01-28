@@ -30,7 +30,7 @@ This is the second and final part of my series on the weapon systems I created f
 
 ## Bullet Whiz-By
 
-The bullet whiz-by sound is a crucial element in any shooter game. It adds realism and excitement to gameplay while serving a tactical purpose—alerting you that someone is shooting at you (and thankfully missed!). This type of sound isn’t exclusive to shooters; racing games, for instance, use similar "whoosh" sounds when cars narrowly avoid collisions. ([Example](https://www.youtube.com/watch?v=5soym8z7Q5A)).
+The bullet whiz-by sound is a crucial element in any shooter game. It adds realism and excitement to gameplay while serving a tactical purpose—alerting you that someone is shooting at you (and thankfully missed!). This type of sound isn’t exclusive to shooters; racing games, for instance, use similar "whoosh" sounds when [**cars narrowly avoid collisions.**](https://www.youtube.com/watch?v=5soym8z7Q5A)
 
 &nbsp;&nbsp;&nbsp;
 
