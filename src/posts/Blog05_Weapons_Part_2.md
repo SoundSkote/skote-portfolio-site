@@ -87,7 +87,6 @@ A kill confirmation sound plays when a player successfully eliminates an enemy. 
 
 To enrich the auditory experience, I added bullet impact sounds for different surfaces. 
 
-&nbsp;&nbsp;&nbsp;
 
 First, I identified the blueprint handling bullet impacts on surfaces and noticed that two new surfaces I added—plastic and wood—were not included in the "Current System Template", which checks the surface material. I created two new variables for these materials and added them as an index to the select node so they could be recognized by the "Current System Template" variable.
 
