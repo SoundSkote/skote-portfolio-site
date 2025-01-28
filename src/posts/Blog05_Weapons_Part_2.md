@@ -1,6 +1,6 @@
 ---
-title: Lyra Sound Redesign Blog 4 - Weapons (Part 1)
-date: 2024-12-15
+title: Lyra Sound Redesign Blog 4 - Weapons (Part 2)
+date: 2025-01-25
 author: "Georgios Georgakis"
 ---
 
