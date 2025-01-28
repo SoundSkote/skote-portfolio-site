@@ -1,5 +1,5 @@
 ---
-title: Lyra Sound Redesign Blog 4 - Weapons (Part 2)
+title: Lyra Sound Redesign Blog 5 - Weapons (Part 2)
 date: 2025-01-25
 author: "Georgios Georgakis"
 ---
@@ -34,8 +34,8 @@ The bullet whiz-by sound is a crucial element in any shooter game. It adds reali
 
 &nbsp;&nbsp;&nbsp;
 
-![Grenade_Toss](/blogImages/BL04_Grenade_Toss_BP.png)
-###### Figure 01. Triggering the grenade toss sound in the animation blueprint.
+![Whiz_By](/blogImages/BL04_Whiz_By.png)
+###### Figure 01. Triggering the whiz-by sound in the "WeaponAudioFunctions" blueprint.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
@@ -45,24 +45,24 @@ Bullet fly-bys are handled by the "WeaponAudioFunctions" blueprint. Using the "W
 The fire distance dynamically controls both the voice volume and a high-pass filter. This means that distant bullet whiz-bys are louder and deeper, while closer ones are thinner and less pronounced. The design rationale is that players get more critical information from weapon fire and footsteps, making whiz-bys less important in close quarters. However, at long range, whiz-bys become more valuable, providing essential feedback that someone is firing in your direction.
 
 
-![Grenade_Toss](/blogImages/BL04_Grenade_Toss_BP.png)
-###### Figure 02. Triggering the grenade toss sound in the animation blueprint.
+![Whiz_By_RTPC](/blogImages/BL04_Whiz_By_RTPC.png)
+###### Figure 02. Whiz-by RTPCs in Wwise.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 
 ## Damage Audio Cues
 
-By modifying the "GCNL_Character_DamageTaken" blueprint, I can now trigger Wwise events based on whether the player is dealing or taking damage. Both actions follow a similar process: when a bullet hits, the system detects whether it struck the body or a weak point (like the head) and plays the appropriate Wwise event.
+By modifying the "GCNL_Character_DamageTaken" blueprint, I can now trigger Wwise events based on whether the player is dealing or taking damage. Both actions follow a similar process: when a bullet hits, the system detects whether it struck the body or a weak point (head) and plays the appropriate Wwise event.
 
-![Grenade_Toss](/blogImages/BL04_Grenade_Toss_BP.png)
-###### Figure 03. Triggering the grenade toss sound in the animation blueprint.
+![Damage_Dealt](/blogImages/BL05_Damage_Dealt.png)
+###### Figure 03. Wwise integration in the "GCNL_Character_DamageTaken" blueprint for dealt damage. 
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 
-![Grenade_Toss](/blogImages/BL04_Grenade_Toss_BP.png)
-###### Figure 04. Triggering the grenade toss sound in the animation blueprint.
+![Damage Taken](/blogImages/BL05_Damage_Taken.png)
+###### Figure 04. Wwise integration in the "GCNL_Character_DamageTaken" blueprint for taken damage. 
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
@@ -77,8 +77,8 @@ The headshot sound includes an additional layer. When you land a headshot on an 
 
 A kill confirmation sound plays when a player successfully eliminates an enemy. This feedback informs the player that the enemy is down, allowing them to shift focus to another target or objective. I implemented this by modifying the "GA_Death" blueprint, which triggers upon a character’s death. Depending on the character's name, the system plays either a kill confirmation cue for enemy deaths or a player death cue when the player is defeated.
 
-![Grenade_Toss](/blogImages/BL04_Grenade_Toss_BP.png)
-###### Figure 05. Triggering the grenade toss sound in the animation blueprint.
+![Death](/blogImages/BL05_Death.png)
+###### Figure 05. Triggering the kill confirm or player death sound in the "GA_Hero_Death" blueprint.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
@@ -93,17 +93,18 @@ First, I identified the blueprint handling bullet impacts on surfaces and notice
 
 Additionally, I created new particle effects for these surfaces to provide a visual representation. I duplicated the "NS_ImpactConcrete" Niagara system, made slight modifications to differentiate it from the concrete effect, and renamed it appropriately for plastic and wooden surfaces. Finally, I updated the blueprint to handle the audio events from Wwise.
 
-![Grenade_Toss](/blogImages/BL04_Grenade_Toss_BP.png)
-###### Figure 06. Triggering the grenade toss sound in the animation blueprint.
+![Bullet_Impacts_Materials](/blogImages/BL05_Bullet_Impacts_Materials.png)
+###### Figure 06. Added materials for the "Current System Template" variable. 
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 
-![Grenade_Toss](/blogImages/BL04_Grenade_Toss_BP.png)
-###### Figure 07. Triggering the grenade toss sound in the animation blueprint.
+![BL05_Bullet_Impacts](/blogImages/BL05_Bullet_Impacts.png)
+###### Figure 07. Triggering the appropriate bullet impact for each surface.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
+
 This system checks which "Current System Template" is being used and, based on its name, activates the corresponding Wwise switch and triggers the appropriate sound event.
 
 &nbsp;&nbsp;&nbsp;
@@ -112,7 +113,7 @@ This system checks which "Current System Template" is being used and, based on i
 
 I also made a small update to the Portal system. Previously, it misbehaved when teleporting grenades, so I rewrote the blueprint to be clearer and tag-based. The logic remains the same: when something enters the portal, it checks whether it’s the player, an NPC, or a grenade and sets the RTPCs and Wwise events accordingly.
 
-![Grenade_Toss](/blogImages/BL04_Grenade_Toss_BP.png)
+![New_portal](/blogImages/BL05_New_portal.png)
 ###### Figure 08. Triggering the grenade toss sound in the animation blueprint.
 
 &nbsp;&nbsp;&nbsp;
@@ -120,7 +121,7 @@ I also made a small update to the Portal system. Previously, it misbehaved when 
 
 Additionally, I changed the virtual voice behavior from "continue to play" to "send to virtual voice" to save some resources.
 
-![Grenade_Toss](/blogImages/BL04_Grenade_Toss_BP.png)
+![Portal_Loop_Virtual_Voice](/blogImages/BL05_Portal_Loop_Virtual_Voice.png)
 ###### Figure 09. Triggering the grenade toss sound in the animation blueprint.
 
 &nbsp;&nbsp;&nbsp;
