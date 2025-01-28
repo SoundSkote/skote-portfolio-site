@@ -34,7 +34,7 @@ The bullet whiz-by sound is a crucial element in any shooter game. It adds reali
 
 &nbsp;&nbsp;&nbsp;
 
-![Whiz_By](/blogImages/BL04_Whiz_By.png)
+![Whiz_By](/blogImages/BL05_Whiz_By.png)
 ###### Figure 01. Triggering the whiz-by sound in the "WeaponAudioFunctions" blueprint.
 
 &nbsp;&nbsp;&nbsp;
@@ -45,7 +45,7 @@ Bullet fly-bys are handled by the "WeaponAudioFunctions" blueprint. Using the "W
 The fire distance dynamically controls both the voice volume and a high-pass filter. This means that distant bullet whiz-bys are louder and deeper, while closer ones are thinner and less pronounced. The design rationale is that players get more critical information from weapon fire and footsteps, making whiz-bys less important in close quarters. However, at long range, whiz-bys become more valuable, providing essential feedback that someone is firing in your direction.
 
 
-![Whiz_By_RTPC](/blogImages/BL04_Whiz_By_RTPC.png)
+![Whiz_By_RTPC](/blogImages/BL05_Whiz_By_RTPC.png)
 ###### Figure 02. Whiz-by RTPCs in Wwise.
 
 &nbsp;&nbsp;&nbsp;
