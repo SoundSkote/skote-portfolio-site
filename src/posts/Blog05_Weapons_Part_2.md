@@ -88,7 +88,7 @@ A kill confirmation sound plays when a player successfully eliminates an enemy. 
 For the second part of the kill confirmation sound, the “GCNL_Character_DamageTaken” blueprint wll be used again. In this blueprint, we check whether the character’s health points are equal or below 0 and we call our second wwise event. 
 
 ![Char_Death](/blogImages/BL05_Char_Death.png)
-###### Figure 06. Triggering the character deconstruction sound in the "GCNL_Character_DamageTaken" blueprint.
+###### Figure 06. Triggering the enemy deconstruction sound in the "GCNL_Character_DamageTaken" blueprint.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
@@ -96,7 +96,7 @@ For the second part of the kill confirmation sound, the “GCNL_Character_Damage
 This event, contrary to the first one, uses an attenuation to change the voice volume and spread based on the enemy’s distance. 
 
 ![Char_Death_Atten](/blogImages/BL05_Char_Death_Atten.png)
-###### Figure 07. Triggering the character deconstruction sound in the "GCNL_Character_DamageTaken" blueprint.
+###### Figure 07. Voice volume and Spread attenuation settings in Wwise.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
