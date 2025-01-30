@@ -75,10 +75,28 @@ The headshot sound includes an additional layer. When you land a headshot on an 
 
 ## Kill Confirm / Player Death
 
-A kill confirmation sound plays when a player successfully eliminates an enemy. This feedback informs the player that the enemy is down, allowing them to shift focus to another target or objective. I implemented this by modifying the "GA_Death" blueprint, which triggers upon a character’s death. Depending on the character's name, the system plays either a kill confirmation cue for enemy deaths or a player death cue when the player is defeated.
+A kill confirmation sound plays when a player successfully eliminates an enemy. This feedback informs the player the enemy is down and they can shift  focus on another target or objective. I wanted this sound to be broken in two different pieces. One is the clear information that the player gets when they get an elimination and its high ping (UI) sound to make it easier for the player to identify the sound. The second sound will be the enemy’s body breaking down and will sound like a sci-fi deconstruction similar to the animation. I implemented the first sound by modifying the “GA_Death” blueprint, which triggers upon any character’s death. In this blueprint, I’ll also implement the player’s death sound which is different to the enemy’s sound. This is happening to enrich the storytelling and make it clearer about who died. So, depending on the character's name, the system plays either a kill confirmation cue for enemy’s death or a player’s death cue when the player is defeated.
+
+
 
 ![Death](/blogImages/BL05_Death.png)
 ###### Figure 05. Triggering the kill confirm or player death sound in the "GA_Hero_Death" blueprint.
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
+For the second part of the kill confirmation sound, the “GCNL_Character_DamageTaken” blueprint wll be used again. In this blueprint, we check whether the character’s health points are equal or below 0 and we call our second wwise event. 
+
+![Char_Death](/blogImages/BL05_Char_Death.png)
+###### Figure 06. Triggering the character deconstruction sound in the "GCNL_Character_DamageTaken" blueprint.
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
+This event, contrary to the first one, uses an attenuation to change the voice volume and spread based on the enemy’s distance. 
+
+![Char_Death_Atten](/blogImages/BL05_Char_Death_Atten.png)
+###### Figure 07. Triggering the character deconstruction sound in the "GCNL_Character_DamageTaken" blueprint.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
@@ -93,13 +111,13 @@ First, I identified the blueprint handling bullet impacts on surfaces and notice
 Additionally, I created new particle effects for these surfaces to provide a visual representation. I duplicated the "NS_ImpactConcrete" Niagara system, made slight modifications to differentiate it from the concrete effect, and renamed it appropriately for plastic and wooden surfaces. Finally, I updated the blueprint to handle the audio events from Wwise.
 
 ![Bullet_Impacts_Materials](/blogImages/BL05_Bullet_Impacts_Materials.png)
-###### Figure 06. Added materials for the "Current System Template" variable. 
+###### Figure 08. Added materials for the "Current System Template" variable. 
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 
 ![BL05_Bullet_Impacts](/blogImages/BL05_Bullet_Impacts.png)
-###### Figure 07. Triggering the appropriate bullet impact for each surface.
+###### Figure 09. Triggering the appropriate bullet impact for each surface.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
@@ -113,7 +131,7 @@ This system checks which "Current System Template" is being used and, based on i
 I also made a small update to the Portal system. Previously, it misbehaved when teleporting grenades, so I rewrote the blueprint to be clearer and tag-based. The logic remains the same: when something enters the portal, it checks whether it’s the player, an NPC, or a grenade and sets the RTPCs and Wwise events accordingly.
 
 ![New_portal](/blogImages/BL05_New_portal.png)
-###### Figure 08. Triggering the grenade toss sound in the animation blueprint.
+###### Figure 10. Triggering the grenade toss sound in the animation blueprint.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
@@ -121,7 +139,7 @@ I also made a small update to the Portal system. Previously, it misbehaved when 
 Additionally, I changed the virtual voice behavior from "continue to play" to "send to virtual voice" to save some resources.
 
 ![Portal_Loop_Virtual_Voice](/blogImages/BL05_Portal_Loop_Virtual_Voice.png)
-###### Figure 09. Triggering the grenade toss sound in the animation blueprint.
+###### Figure 11. Triggering the grenade toss sound in the animation blueprint.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
