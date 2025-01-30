@@ -93,10 +93,10 @@ For the second part of the kill confirmation sound, the “GCNL_Character_Damage
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 
-This event, contrary to the first one, uses an attenuation to change the voice volume and spread based on the enemy’s distance. 
+This event, contrary to the first one, uses an attenuation to affect the voice volume, a low-pass filter and spread based on the enemy’s distance. 
 
 ![Char_Death_Atten](/blogImages/BL05_Char_Death_Atten.png)
-###### Figure 07. Voice volume and Spread attenuation settings in Wwise.
+###### Figure 07. Voice volume, Low-Pass filter and Spread attenuation settings in Wwise.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
