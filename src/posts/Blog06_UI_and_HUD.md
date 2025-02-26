@@ -31,7 +31,7 @@ As this project finishes, it's time to work on the UI and HUD sounds. These soun
 
 &nbsp;&nbsp;&nbsp;
 
-## Respawn Timer
+### Respawn Timer
 
 When the player dies they’ll see a timer on their screen that counts down until they respawn. For this sound, I used a blend container in Wwise to play four different layers. One of them provides a tonal element, another can be described as a data-transmitting sound, and the other two consist of a looping beep and a clicky sound. All layers use data from the game engine to change the pitch based on the remaining time. This creates a dynamic and evolving sound that peaks just before the player respawns.
 
@@ -50,7 +50,7 @@ Something more exciting is a transition sound I added to play when the timer sto
 
 &nbsp;&nbsp;&nbsp;
 
-## Respawn/Spawn
+### Respawn/Spawn
 
 
 The spawn/respawn sound is played when the player reappears in the game. This sound aligns with the style of the VFX, where particles reveal the character. Implementing this sound was relatively straightforward. I located the corresponding blueprint responsible for the spawn effect and I added a new pin to the sequence node to trigger my Wwise event.
@@ -82,7 +82,7 @@ The game includes a system that plays a sound during the final moments before th
 &nbsp;&nbsp;&nbsp;
 
 
-## Match Ended (Victory/Defeat)
+### Match Ended (Victory/Defeat)
 
  
 Last but not least are the match-ended sounds. When the match ends, the player will see a HUD (head-up display) showing whether they won or lost. It was quite simple to play the corresponding sound—I simply added the appropriate Wwise events on the “W_MatchDecided_Message” blueprint. 
@@ -94,7 +94,7 @@ Last but not least are the match-ended sounds. When the match ends, the player w
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 
-## Conclusion
+### Conclusion
 
 This was shorter than my usual blogs but I had a really fun time redesigning it! UI and HUD can often be a bit tricky to get it right but it possibly one of the few things that any type of game would include. They are a very important section for any game as they need to provide quick and clear information to the player. The next blog will be about reverb and occlusion which I ma very excited to experiment with!
 
