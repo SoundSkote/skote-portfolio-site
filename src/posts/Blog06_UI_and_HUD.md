@@ -89,7 +89,7 @@ Last but not least are the match-ended sounds. When the match ends, the player w
 
 
 ![End_Screen](/blogImages/BL06_End_Screen.png)
-###### Figure 04. Setting the “Last”Sec_RTPC” and triggering my wwise event for the last points of the match in the “W_CPScoreWidget” widget blueprint. 
+###### Figure 04. Triggering the Victory/Defeat wwise events in “W_MatchDecided_Messages” widget blueprint. 
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
