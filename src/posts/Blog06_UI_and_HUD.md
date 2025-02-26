@@ -1,5 +1,5 @@
 ---
-title: Lyra Sound Redesign Blog 6 - Blog06_UI_And_HUD
+title: Lyra Sound Redesign Blog 6 - UI and HUD
 date: 2025-02-25
 author: "Georgios Georgakis"
 ---
