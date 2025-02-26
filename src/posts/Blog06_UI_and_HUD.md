@@ -7,7 +7,7 @@ author: "Georgios Georgakis"
 
 
 
-![description](/blogImages/Blog06_UI_And_HUD.png)
+![description](/blogImages/Blog06_UI_and_HUD.png)
 
 # Lyra Sound Redesign Blog 6 - Blog 06 UI and HUD
 
@@ -40,7 +40,7 @@ In Unreal Engine, I used the W_RespawnTimer blueprint and replaced the pre-exist
 
 &nbsp;&nbsp;&nbsp;
 
-![Whiz_By](/blogImages/BL05_Whiz_By.png)
+![Respawn_Timer](/blogImages/BL06_Respawn_Timer.png)
 ###### Figure 01. Triggering Wwise events in the “W_RespawnTimer” widget blueprint.
 
 &nbsp;&nbsp;&nbsp;
@@ -56,7 +56,7 @@ Something more exciting is a transition sound I added to play when the timer sto
 The spawn/respawn sound is played when the player reappears in the game. This sound aligns with the style of the VFX, where particles reveal the character. Implementing this sound was relatively straightforward. I located the corresponding blueprint responsible for the spawn effect and I added a new pin to the sequence node to trigger my Wwise event.
 
 
-![Damage_Dealt](/blogImages/BL05_Damage_Dealt.png)
+![Spawn](/blogImages/BL06_Spawn.png)
 ###### Figure 02. Play spawn Wwise event in “GCNL_Spawning” blueprint. 
 
 &nbsp;&nbsp;&nbsp;
@@ -64,7 +64,7 @@ The spawn/respawn sound is played when the player reappears in the game. This so
 
 Additionally, I added attenuation to control the voice volume, low-pass filter, and spread based on distance. 
 
-![Damage Taken](/blogImages/BL05_Damage_Taken.png)
+![Spawn_Atten](/blogImages/BL06_Spawn_Atten.png)
 ###### Figure 03. "Character_Spawn" attenuation settings in Wwise. 
 
 &nbsp;&nbsp;&nbsp;
@@ -75,8 +75,8 @@ Additionally, I added attenuation to control the voice volume, low-pass filter, 
 
 The game includes a system that plays a sound during the final moments before the match ends. I utilized this system to trigger a ping sound, with its pitch and volume increasing as the number approaches its peak.
 
-![Damage Taken](/blogImages/BL05_Damage_Taken.png)
-###### Figure 04. Setting the “Last”Sec_RTPC” and triggering my wwise event for the last points of the match in the “W_CPScoreWidget” widget blueprint. 
+![Last_Sec](/blogImages/BL06_Last_Sec.png)
+###### Figure 04. Setting the “Last_Sec_RTPC” and triggering my wwise event for the last points of the match in the “W_CPScoreWidget” widget blueprint. 
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
@@ -88,7 +88,7 @@ The game includes a system that plays a sound during the final moments before th
 Last but not least are the match-ended sounds. When the match ends, the player will see a HUD (head-up display) showing whether they won or lost. It was quite simple to play the corresponding sound—I simply added the appropriate Wwise events on the “W_MatchDecided_Message” blueprint. 
 
 
-![Damage Taken](/blogImages/BL05_Damage_Taken.png)
+![End_Screen](/blogImages/BL06_End_Screen.png)
 ###### Figure 04. Setting the “Last”Sec_RTPC” and triggering my wwise event for the last points of the match in the “W_CPScoreWidget” widget blueprint. 
 
 &nbsp;&nbsp;&nbsp;
