@@ -1,15 +1,15 @@
 ---
-title: Lyra Sound Redesign Blog 5 - Weapons (Part 2)
-date: 2025-01-25
+title: Lyra Sound Redesign Blog 6 - Blog06_UI_And_HUD
+date: 2025-02-25
 author: "Georgios Georgakis"
 ---
 
 
 
 
-![description](/blogImages/Blog05_Weapons_Part_2.png)
+![description](/blogImages/Blog06_UI_And_HUD.png)
 
-# Lyra Sound Redesign Blog 5 - Weapons (Part 2)
+# Lyra Sound Redesign Blog 6 - Blog 06 UI and HUD
 
 ## By Georgios Georgakis
 
@@ -24,10 +24,10 @@ author: "Georgios Georgakis"
 
 As this project finishes, it's time to work on the UI and HUD sounds. These sounds include:
 
-- **Respawn Timer**
-- **Spawn/Respawn**
-- **Last Seconds Timer**
-- **Match Ended (Victory/Defeat Screen)**
+- Respawn Timer
+- Spawn/Respawn
+- Last Seconds Timer
+- Match Ended (Victory/Defeat Screen)
 
 &nbsp;&nbsp;&nbsp;
 
@@ -96,11 +96,9 @@ Last but not least are the match-ended sounds. When the match ends, the player w
 
 ## Conclusion
 
-That wraps up my work on the weapon audio redesign! This part was one of my favorites because I had the opportunity to experiment more with sound design and implementation. The Lyra redesign project is almost complete, and I can’t wait to share a real-time showcase of all the sounds and systems! 
+This was shorter than my usual blogs but I had a really fun time redesigning it! UI and HUD can often be a bit tricky to get it right but it possibly one of the few things that any type of game would include. They are a very important section for any game as they need to provide quick and clear information to the player. The next blog will be about reverb and occlusion which I ma very excited to experiment with!
 
-The next blog will focus on UI sounds, including victory/defeat screens, respawning, and countdowns.
-
-Thanks for reading, and as always, feel free to reach out with feedback!
+Again, thanks for reading and feel free to reach out with any feedback or questions.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
