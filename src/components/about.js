@@ -29,7 +29,7 @@ function About() {
               <li className='font-extrabold underline pb-5 list-none'>My favourite games:</li>
               <li>Control</li>
               <li>The Finals</li>
-              <li>Portal 2</li>
+              <li>Cyberpunk 2077</li>
               <li>Titanfall 2</li>
               <li>Amnesia Series</li>
             </ul>
