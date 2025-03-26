@@ -1,6 +1,7 @@
 import logo from '../assets/skoteLogo.png'
 import linkedIn from '../assets/linkedIn.png'
 import email from '../assets/email.png'
+import bluesky from '../assets/bluesky.png'
 
 function scrollToSection(elementId) {
   console.log('scrollToSection called with elementId:', elementId);
