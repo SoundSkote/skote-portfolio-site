@@ -23,6 +23,7 @@ function Footer() {
             <img className="h-[7rem] w-auto pt-5 transition-all duration-300 group-hover:scale-125" src={email} alt='email'/>
           </a>
           <a className="flex h-[7rem] w-auto pt-6 justify-center" target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/georgios-georgakis/'><img className="h-5/6 w-auto transition-all duration-300 hover:scale-125" src={linkedIn} alt='linked in'/></a>
+          </a>
           <a className="flex h-[7rem] w-auto pt-6 justify-center" target="_blank" rel="noreferrer" href='https://bsky.app/profile/georgiosaudio.bsky.social'><img className="h-5/6 w-auto transition-all duration-300 hover:scale-125" src={bluesky} alt='bluesky'/></a>
         </div>
       </div>
