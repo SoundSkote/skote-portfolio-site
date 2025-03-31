@@ -230,12 +230,12 @@ Each bus features two key effects. Firstly, a dynamic Parametric EQ that is cont
 
 
 ![SlapBackEQ](/blogImages/Bl07_SlapBackEQ.png)
-###### Figure 19. RTPCs set on the Parametric EQ effect.
+###### Figure 20. RTPCs set on the Parametric EQ effect.
 
 &nbsp;&nbsp;&nbsp;
 
 ![SlapBackDelay_Wwise](/blogImages/Bl07_SlapBackDelay_Wwise.png)
-###### Figure 20. RTPCs set for Delay effect.
+###### Figure 21. RTPCs set for Delay effect.
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
