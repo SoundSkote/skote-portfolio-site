@@ -5,7 +5,7 @@ author: "Georgios Georgakis"
 ---
 
 
-![description](/blogImages/Blog07_Sound_Propagation.md.png)
+![description](/blogImages/Blog07_Sound_Propagation.png)
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
@@ -77,13 +77,13 @@ This value is then sent to an RTPC, which adjusts the sound’s filtering and vo
 
 To implement these effects, I placed **AkReverbZones** and **AkSpatialAudioVolumes** across the map, tailored to different environments:
 
-Outdoors
-Middle tower
-Small corridors
-Ground floor
-Upper floor
-Control Points
-Columns & Portals
+- Outdoors
+- Middle tower
+- Small corridors
+- Ground floor
+- Upper floor
+- Control Points
+- Columns & Portals
 
 &nbsp;&nbsp;&nbsp;
 
@@ -97,7 +97,7 @@ When the player isn’t inside a defined area, they exist within the "Outdoors" 
 
 For the enclosed spaces such as the Middle Tower and the Small Corridors, I used Ak Spatial Audio Volumes to reflect the sound using geometry and apply reverb. Then I added Ak Portals to the spaces’ openings. Ak Portals work seamlessly with Ak Spatial Audio Volumes, allowing the sound to escape from the room’s openings.
 
-![Middle_tower_Inside](/blogImages/Middle_tower_Inside.png)
+![Middle_tower_Inside](/blogImages/Bl07_Middle_tower_Inside.png)
 ###### Figure 05. Inside Middle Tower (Ak Spatial Audio Volume and Ak Portals are highlighted).
 
 &nbsp;&nbsp;&nbsp;
@@ -117,12 +117,13 @@ These larger, open areas primarily use **AkReverbZones** since they focus on rev
 
 However, To maintain acoustic consistency, I placed **AkSpatialAudioVolumes** on individual columns. This enables realistic diffraction around edges, material-based transmission and most importantly, seamless integration with the broader acoustic environment.
 
-![Ground and Upper Floor](/blogImages/Bl07_Ground and Upper Floor.png)
+
+![Bl07_Ground_and_Upper_Floor.png](/blogImages/Bl07_Ground_and_Upper_Floor.png)
 ###### Figure 07. Ground Floor and Upper Floor.
 
 &nbsp;&nbsp;&nbsp;
 
-![Ground and Upper Floor](/blogImages/Bl07_Ground and Upper Floor_Highlighted.png)
+![Ground_and_Upper_Floor_Columns_Highlighted](/blogImages/Bl07_Ground_and_Upper_Floor_Columns_Highlighted.png)
 ###### Figure 08. Ground Floor and Upper Floor with the columns’ Ak Spatial Audio Volumes highlighted.
 
 &nbsp;&nbsp;&nbsp;
@@ -190,22 +191,22 @@ After the rays are successfully casted, the hit distances are stored in the Trac
 Lastly, there is the direction detection. Using the trace line’s index it identifies the wall’s relative position. If there is a hit on an index ≥ 5, the SlapBack_Left RTPC is being fed and an echo is coming from the left stereo channel. Same for the right stereo channel if the index is between 1 and 3. In cases where the hit is coming from straight ahead or straight behind (Index 0 or 4), a subtler, balanced delay will be applied. If there are no hits then the RTPCs are set to default. 
 
 
-![Slapback01](/blogImages/Bl07_Slapback01.png)
+![SlapBack01](/blogImages/Bl07_SlapBack01.png)
 ###### Figure 15. SlapBackDelay blueprint 1/4.
 
 &nbsp;&nbsp;&nbsp;
 
-![Slapback02](/blogImages/Bl07_Slapback02.png)
+![SlapBack02](/blogImages/Bl07_SlapBack02.png)
 ###### Figure 16. SlapBackDelay blueprint 2/4.
 
 &nbsp;&nbsp;&nbsp;
 
-![Slapback03](/blogImages/Bl07_Slapback03.png)
+![SlapBack03](/blogImages/Bl07_SlapBack03.png)
 ###### Figure 17. SlapBackDelay blueprint 3/4. 
 
 &nbsp;&nbsp;&nbsp;
 
-![Slapback04](/blogImages/Bl07_Slapback04.png)
+![SlapBack04](/blogImages/Bl07_SlapBack04.png)
 ###### Figure 18. SlapBackDelay blueprint 4/4. 
 
 &nbsp;&nbsp;&nbsp;
@@ -252,3 +253,6 @@ I hope this blog can be beneficial to audio peeps and sparks ideas for your own 
 
 Thanks,  
 Georgios Georgakis
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
