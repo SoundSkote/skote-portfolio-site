@@ -256,3 +256,11 @@ Georgios Georgakis
 
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
+
+## References
+
+
+Audiokinetic (2023) Wwise Up On Air Hands-On | Wwise Spatial Audio: Acoustics - Getting Started in Unreal, Available from: <https://www.youtube.com/watch?v=O09X1xBhcuI>.
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
