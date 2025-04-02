@@ -251,7 +251,6 @@ I hope this blog can be beneficial to audio peeps and sparks ideas for your own 
 &nbsp;&nbsp;&nbsp;
 
 
-Thanks,  
 Georgios Georgakis
 
 &nbsp;&nbsp;&nbsp;
