@@ -33,7 +33,7 @@ This sound propagation includes:
 
 When I started this project I initially relied on occlusion and reverb as the main sound propagation systems. And for the most part, this worked well! However, one of the reasons I started this redesign was to also experiment and learn new techniques.
 
-I decided to dive into diffraction and transmission using Wwise, and on top of that, I created my own stereo slapback delay which significantly improved the game's sound. The current version is far more dynamic and realistic, elevating the overall audio experience. That said, I kept the occlusion system for certain elements since it requires less computing power and isn’t as critical from a gameplay (ludic) perspective.
+I decided to dive into diffraction and transmission using Wwise, and on top of that, I created my own stereo slapback delay which significantly improved the game's sound. The current version is far more dynamic and realistic, elevating the overall audio experience. That said, I kept the occlusion system for certain sounds that are not as critical from a gameplay (ludic) perspective, since it requires less computing power.
 
 &nbsp;&nbsp;&nbsp;
 
