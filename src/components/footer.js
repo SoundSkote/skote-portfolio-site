@@ -1,6 +1,7 @@
 import logo from '../assets/skoteLogo.png'
 import linkedIn from '../assets/linkedIn.png'
 import email from '../assets/email.png'
+import email from '../assets/bluesky.png'
 
 
 function scrollToSection(elementId) {
@@ -22,6 +23,8 @@ function Footer() {
             <img className="h-[7rem] w-auto pt-5 transition-all duration-300 group-hover:scale-125" src={email} alt='email'/>
           </a>
           <a className="flex h-[7rem] w-auto pt-6 justify-center" target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/georgios-georgakis/'><img className="h-5/6 w-auto transition-all duration-300 hover:scale-125" src={linkedIn} alt='linked in'/></a>
+          <a className="flex h-[7rem] w-auto pt-6 justify-center" target="_blank" rel="noreferrer" href='https://bsky.app/profile/georgiosaudio.bsky.social'><img className="h-5/6 w-auto transition-all duration-300 hover:scale-125" src={bluesky} alt='Bluesky'/></a>
+        </div>
         </div>
       </div>
       <h1 className='text-xs md:text-base md:order-2'>Copyright© 2025-26 Created by <a target="_blank" rel="noreferrer" href='https://www.kwtsos.bio' className='hover:text-slate-500'>Kostas</a></h1>
