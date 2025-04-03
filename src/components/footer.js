@@ -1,7 +1,7 @@
 import logo from '../assets/skoteLogo.png'
 import linkedIn from '../assets/linkedIn.png'
 import email from '../assets/email.png'
-import email from '../assets/bluesky.png'
+import bluesky from '../assets/bluesky.png'
 
 
 function scrollToSection(elementId) {
