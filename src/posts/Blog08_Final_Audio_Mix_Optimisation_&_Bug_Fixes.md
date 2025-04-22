@@ -160,3 +160,8 @@ As promised at the start of this project, a breakdown video of my redesign will 
 &nbsp;&nbsp;&nbsp;
 
 As always, feel free to give me feedback and let me know your thoughts.
+
+Georgios Georgakis
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
