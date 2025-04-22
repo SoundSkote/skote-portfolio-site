@@ -19,15 +19,15 @@ I’m excited to be writing the final blog about my Lyra redesign. I’ll try to
 
 &nbsp;&nbsp;&nbsp;
 
-This project is about audio design, meaning that my sounds do not compete with other elements such as dialogue and music. While this gives my sounds more focus, proper mixing remains critical to give each sound room to breathe and give the player a clear audio feedback. 
+This project is about audio design, meaning my sounds do not compete with other audio elements such as dialogue and music. While this gives my sounds more focus, proper mixing remains critical to give each sound room to breathe and give the player a clear audio feedback. 
 
-Mixing doesn’t start at the end of the project but by the time the first sound goes into the game. It’s important to always be mindful of the state of the sound while implementing it (e.g., loudness and attenuation) to not only save us time and energy towards the end of the project but also make testing and QA better and easier. Final mix involves refining balances based on priority and playtesting.
+Mixing doesn’t start at the end of the project but by the time the first sound goes into the game. It’s important to always be mindful of the state of the sound while implementing it (e.g., loudness and attenuation) to not only save time and energy towards the end of the project but also make testing and QA easier. Final mix involves refining balances based on priority and playtesting.
 
 When I started thinking about the final mixing, I tried to define my goal.
 
 **What do I want my game to sound like? What sounds does the player NEED to hear?**
 
-Lyra is a fast paced shooter where a sound can literally save you or give you an advantage over the enemy. It might not be as complex as games like Overwatch or The Finals but the main pillars are the same. Gameplay information and clarity were on top of my priorities. I made a priority list of the sounds that should be clearer than others. 
+Lyra is a fast paced shooter where a sound can literally save you or give you an advantage over the enemy. Lyra might not be as complex as games like Overwatch or The Finals but the main pillars remain similar. Gameplay information and clarity were on top of my priorities. First, I properly assigned each of my sounds to an aux bus and then I made a priority list of the sounds that should be clearer than others. 
 
 ![Audio_Buses](/blogImages/Bl08_Buses.png)
 ###### Figure 01. Audio Buses.
@@ -46,8 +46,8 @@ From highest to lowest priority the list looks like this:
 The HUD sounds are on top as they:
 
 - Give feedback to the player about dealt/taken damage and kill confirmation.
-- Give strong information about the state of the game (e.g., player is dead or match ended).
-- Are short and would not draw too much attention during a crossfire. 
+- Are usually short and will not draw too much attention during crossfire.
+- Will provide strong information about the state of the game (e.g., player is dead or match ended).
 
 &nbsp;&nbsp;&nbsp;
 
@@ -58,22 +58,21 @@ Player’s gunshots are also very important. The player can switch at any time b
 
 &nbsp;&nbsp;&nbsp;
 
-Almost as important are the enemy fire and enemy foley and bullets. It's crucial that the player needs to:
+Almost as important are the enemy fire and enemy foley and bullets. Since enemies are threats, their foley is prioritized over the player’s foley sounds to allow the player to detect nearby enemies better. It's crucial that the player needs to:
 
 - Be aware that the enemy is shooting.
 - Pin-point their location if they cannot see them.
 - Know what weapon the enemy uses in order to be able to strategize better.
 - Hear their footsteps when they are nearby.
-- Be informed that the enemy fired towards the player’s direction even if they didn’t hit us.
-
-Since enemies are threats, their foley is prioritized over the player’s own sounds.
+- Be informed that the enemy fired towards the player’s direction even if they didn’t hit them.
+  
 
 &nbsp;&nbsp;&nbsp;
 
-Next in my list is the sounds of the level interactions (e.g., using a jump pad or a health item, entering a control point) as they:
+Next in my list is the level interactions sounds (e.g., using a jump pad or a health item, entering a control point) as they:
 
-- Confirm the player's interactions with the map or the objective.
-- Give away the character's position to another player.
+- Confirm the player's interactions with an object.
+- Can give away the character's position to another player.
 
 &nbsp;&nbsp;&nbsp;
 
@@ -81,17 +80,17 @@ When gunfire pauses, the player’s foley becomes more audible, helping them:
 
 - Know if they’re silent or loud.
 - Get information about the surface they are stepping on.
-- Immerse them into the world.
+- Immerse the player into the world.
 
 &nbsp;&nbsp;&nbsp;
 
-Lastly, ambience is there as a bed that ties everything together and gets pushed the most in an intense gunfight. 
+Lastly, ambience is there as a bed that ties everything together and gets pushed the most, especially in an intense gunfight. 
 
 &nbsp;&nbsp;&nbsp;
 
 ## Mixing in Wwise
 
-In Wwise, I created audio buses in Wwise to allow me to control the mix better. Every 3D sound has its own attenuation, driving its volume and often a filter based on distance.
+In Wwise, I created audio buses to allow me to control the mix better. Every 3D sound has its own attenuation, driving its volume and often a filter and/or spread based on distance.
 
 ![Attenuation](/blogImages/Bl08_Atten.png)
 ###### Figure 02. Attenuaton curves for "Character_Spawn" sound.
@@ -114,7 +113,7 @@ Also, I used sidechaining to dynamically control the volume of each bus based on
 
 ## Optimisation
 
-To optimise a few things, I started limiting sound instances, killing voices that can be built up unnecessarily as well as changing the Playback Priority settings. For example, I limited the wind gusts to 2 sound instances globally as they do not add any gameplay information and the player does not need to hear more than 1 or 2 at the same time. Moreover, if they leave the area where the wind gusts spawn, then that will kill the voices, saving some needed memory.
+To optimise a few things, I started limiting sound instances, killing voices that can populate unnecessarily as well as changing the Playback Priority settings. For example, I limited the wind gusts to 2 sound instances globally as they do not add any gameplay information and the player does not need to hear more than 1 or 2 at the same time. Moreover, if they leave the area where the wind gusts spawn, then that will kill the voices, saving some needed memory.
 
 ![Voice_Limit](/blogImages/Bl08_Voice_Limit.png)
 ###### Figure 05. Voice Limiting in Wwise.
@@ -152,7 +151,7 @@ Another bug I noticed was about the Control Points. This bug would not trigger t
 
 ## Conclusions
 
-I’m very happy about the progress I made with this project and the things I’ve learned. Mixing it made me realise two things. Firstly, how mixing can help to give the player more clarity in terms of information. Secondly is the progress I’ve made through this game and it was nice to finally take a step back and see how all of it came together.
+I’m very happy about the progress I made with this project and the things I’ve learned. Mixing it made me realise two things. Firstly, how mixing can be great to give the player more gameplay clarity. Secondly is the progress I’ve made through this game and it was nice to finally take a step back and see how all of it came together.
 &nbsp;&nbsp;&nbsp;
 
 As promised at the start of this project, a breakdown video of my redesign will follow shortly and will be going over my favourite systems.
