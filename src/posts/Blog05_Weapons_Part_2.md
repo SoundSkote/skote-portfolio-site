@@ -1,5 +1,5 @@
 ---
-title: Lyra Sound Redesign Blog 5 - Weapons (Part 2)
+title: Lyra Sound Redesign Blog 5 - Weapons & Updates (Part 2)
 date: 2025-01-25
 author: "Georgios Georgakis"
 ---
