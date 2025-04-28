@@ -9,7 +9,7 @@ author: "Georgios Georgakis"
 
 ![description](/blogImages/Blog05_Weapons_Part_2.png)
 
-# Lyra Sound Redesign Blog 5 - Weapons (Part 2)
+# Lyra Sound Redesign Blog 5 - Weapons & Updates (Part 2)
 
 ## By Georgios Georgakis
 
