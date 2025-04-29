@@ -13,7 +13,10 @@ author: "Georgios Georgakis"
 Hi everyone!
 
 
-Over the Easter break, I took a quick trip and had my recorder with me, so I captured some airport ambience along the way. I thought it might be useful to others, so I’m sharing it here.
+Over the Easter break, I took a quick trip and had my recorder with me, so I captured some airport ambience along the way. I thought it might be useful to others, so feel free to grab them :)
 
 
 link: **<https://georgiosaudio.gumroad.com/l/Airport-Ambiences>**
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
