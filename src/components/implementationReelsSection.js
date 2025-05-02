@@ -46,24 +46,14 @@ function ImplementationReels() {
         </div>
  
          <div className='flex flex-col w-full items-start lg:flex-row lg:space-x-5'>
-          <div className='flex flex-col w-full'>
-            <div id="video-wrapper3" className='relative flex w-full h-full items-end p-6'>
-              <ReactPlayer width='100%' height='100%' style={style} url='https://vimeo.com/870703436' controls={true}/>
-            </div>
-            <div className='flex flex-col space-y-5 text-black pt-5 z-10 text-xl xl:text-2xl'>
-              <h1 className='font-extrabold text-3xl 2xl:text-4xl bg-white'>Abandoned Hospital Gameplay</h1>
-              <h2 className='font-bold bg-white'>Sound Design & Unreal Engine 5 Implementation</h2>
-              <p className='text-left bg-white pb-5'>Using the Abandoned Hospital demo level in Unreal Engine, I implemented my sounds from ambience to interactions using Unreal Engine's native tools such as sound cues and blueprints. Further, I have also modified the level to add more interactions and enhance the gameplay experience. These changes vary from item collection, to light changes, or moving sounds using sequencers.</p>
-            </div>
-          </div>
-          <div className='flex flex-col w-full'>
-            <div id="video-wrapper4" className='relative flex w-full h-full items-end p-6'>
-              <ReactPlayer width='100%' height='100%' style={style} url='https://vimeo.com/874181212' controls={true}/>
-            </div>
+          <div className='flex w-full'>
             <div className='flex flex-col space-y-5 text-black bg-white pt-5 text-xl xl:text-2xl'>
-              <h1 className='font-extrabold text-3xl 2xl:text-4xl'>Space Journey Gameplay</h1>
-              <h2 className='font-bold'>Sound Design & Fmod / Unity Implementation</h2>
-              <p className='text-left pb-5'>Space Journey is a Unity demo game that I used to demonstrate my Fmod and Unity implementation skills. This video breaks down all the different sound sources and audible interactions within the game.</p>
+              <h1 className='font-extrabold text-3xl 2xl:text-4xl'>Lyra Implementation Showreel</h1>
+              <h2 className='font-bold'>Sound Design - UE5 & Wwise</h2>
+              <p className='text-left pb-5'>???.</p>
+            </div>
+            <div id="video-wrapper4" className='relative flex w-full h-full items-end p-6'>
+              <ReactPlayer width='100%' height='100%' style={style} url='https://vimeo.com/1080875441' controls={true}/>
             </div>
           </div>
         </div> 
