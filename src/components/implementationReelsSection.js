@@ -45,7 +45,7 @@ function ImplementationReels() {
 
         </div>
  
-     {/*    <div className='flex flex-col w-full items-start lg:flex-row lg:space-x-5'>
+         <div className='flex flex-col w-full items-start lg:flex-row lg:space-x-5'>
           <div className='flex flex-col w-full'>
             <div id="video-wrapper3" className='relative flex w-full h-full items-end p-6'>
               <ReactPlayer width='100%' height='100%' style={style} url='https://vimeo.com/870703436' controls={true}/>
@@ -66,7 +66,7 @@ function ImplementationReels() {
               <p className='text-left pb-5'>Space Journey is a Unity demo game that I used to demonstrate my Fmod and Unity implementation skills. This video breaks down all the different sound sources and audible interactions within the game.</p>
             </div>
           </div>
-        </div> */}
+        </div> 
       </div>
 
       <img className="w-full z-50 object-cover" src={image} alt='divider'/>
