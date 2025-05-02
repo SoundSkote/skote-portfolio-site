@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@fontface {
+  font-family: 'TW Cen MT';
+  src: url('./assets/fonts/TwCenMT-Regular.woff2') format('woff2'),
+       url('./assets/fonts/TwCenMT-Regular.woff') format('woff');
+}
 
 .markdown > * {
   all: revert;
@@ -18,7 +23,7 @@
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'TW Cen MT', 'Open Sans', sans-serif;
   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
