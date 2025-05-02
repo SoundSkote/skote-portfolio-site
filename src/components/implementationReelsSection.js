@@ -32,13 +32,13 @@ function ImplementationReels() {
           <div className='flex flex-col w-full space-y-5 lg:flex-row lg:space-y-0 pt-20 items-center'>
 
             <div id="video-wrapper2" className='relative flex w-full h-full items-end p-8'>
-              <ReactPlayer width='100%' height='100%' style={style} url='https://vimeo.com/899576845' controls={true}/>  
+              <ReactPlayer width='100%' height='100%' style={style} url='https://vimeo.com/1080875441' controls={true}/>  
             </div>
 
             <div className='flex flex-col space-y-5 ml-5 pt-5 px-5 z-10 w-full text-black text-xl 2xl:text-2xl lg:w-1/2 bg-white'>
-                <h1 className='font-extrabold text-3xl 2xl:text-4xl'>Abandoned Hospital Breakdown</h1>
-                <h2 className='font-bold bg-white'>Sound Design & Unreal Engine 5 Implementation</h2>
-                <p className='text-left bg-white'>This video explains how I used sound cues and blueprints to implement sounds such as ambience, source loops and area loops, interactions, footsteps, and dialogue. Further, I talk about how I used audio volumes, sequences, animations, and systems to enhance the gameplay experience.</p>
+                <h1 className='font-extrabold text-3xl 2xl:text-4xl'>Lyra Implementation Showreel</h1>
+                <h2 className='font-bold bg-white'>Sound Design & Unreal Engine 5 & Wwise</h2>
+                <p className='text-left bg-white'>This video shows my favourite systems I made for the Lyra audio redesign. You can find more about its development on my Blog.</p>
             </div>
 
           </div>
