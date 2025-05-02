@@ -45,18 +45,24 @@ function ImplementationReels() {
 
         </div>
  
-         <div className='flex flex-col w-full items-start lg:flex-row lg:space-x-5'>
-          <div className='flex w-full'>
-            <div className='flex flex-col space-y-5 text-black bg-white pt-5 text-xl xl:text-2xl'>
-              <h1 className='font-extrabold text-3xl 2xl:text-4xl'>Lyra Implementation Showreel</h1>
-              <h2 className='font-bold'>Sound Design - UE5 & Wwise</h2>
-              <p className='text-left pb-5'>???.</p>
+        <div className='flex flex-col w-full space-y-5 lg:flex-row lg:space-y-0 pt-20 items-center'>
+
+          <div className='flex flex-col w-full space-y-5 lg:flex-row lg:space-y-0 pt-20 items-center'>
+            
+            <div className='flex flex-col space-y-5 ml-5 pt-5 px-5 z-10 w-full text-black text-xl 2xl:text-2xl lg:w-1/2 bg-white'>
+                <h1 className='font-extrabold text-3xl 2xl:text-4xl'>Abandoned Hospital Breakdown</h1>
+                <h2 className='font-bold bg-white'>Sound Design & Unreal Engine 5 Implementation</h2>
+                <p className='text-left bg-white'>This video explains how I used sound cues and blueprints to implement sounds such as ambience, source loops and area loops, interactions, footsteps, and dialogue. Further, I talk about how I used audio volumes, sequences, animations, and systems to enhance the gameplay experience.</p>
             </div>
-            <div id="video-wrapper4" className='relative flex w-full h-full items-end p-6'>
-              <ReactPlayer width='100%' height='100%' style={style} url='https://vimeo.com/1080875441' controls={true}/>
+
+            <div id="video-wrapper2" className='relative flex w-[90%] h-[90%] items-end p-8'>
+              <ReactPlayer width='100%' height='100%' style={style} url='https://vimeo.com/899576845' controls={true}/>  
             </div>
+
           </div>
-        </div> 
+
+        </div>
+
       </div>
 
       <img className="w-full z-50 object-cover" src={image} alt='divider'/>
