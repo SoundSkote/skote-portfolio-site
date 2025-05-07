@@ -38,7 +38,7 @@ function About() {
               <li>SPINE</li>
               <li>ARC Raiders</li>
               <li>Vampire: The Masquerade - Bloodlines 2</li>
-              <li>Silent Hill 2 Remake</li>
+              <li>Cronos: The New Dawn</li>
               <li>Deadlock</li>
             </ul>
             <ul className='lg:w-1/3'>
