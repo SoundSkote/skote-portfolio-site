@@ -65,7 +65,7 @@ The map looks like a circular sky island consisting of two floors. There are thr
 
 **Portal Loop**
 
-(This BP has been updated. You can check it on **[Blog05](https://www.georgiosaudio.com/blog/Blog05_Weapons_Part_2)** & **[Blog08](https://www.georgiosaudio.com/blog/Blog08_Final_Audio_Mix_Optimisation_&_Bug_Fixes)**.
+(This BP has been updated. You can check the changes on **[Blog05](https://www.georgiosaudio.com/blog/Blog05_Weapons_Part_2)** & **[Blog08](https://www.georgiosaudio.com/blog/Blog08_Final_Audio_Mix_Optimisation_&_Bug_Fixes)**.)
 
 The sound of the portal was the first sound I made for Lyra because it’s creative and easy to implement. 
 
@@ -110,7 +110,7 @@ All the spawners spawn in the game loaded. Using the “Event Begin Play” node
 
 ### General Area Wind
 
-(This BP has been updated. You can check it on **[Blog08](https://www.georgiosaudio.com/blog/Blog08_Final_Audio_Mix_Optimisation_&_Bug_Fixes)**.
+(This BP has been updated. You can check the changes on **[Blog08](https://www.georgiosaudio.com/blog/Blog08_Final_Audio_Mix_Optimisation_&_Bug_Fixes)**.)
 
 To create an ambience base for our map, a wind bed has been made. However, to avoid making it very monotonous and uninteresting I optimised a few things. Firstly, I created a new actor blueprint and placed it above the center of the map. This felt like the most natural way to check if the player is behind a wall or not. This way, I was able to add occlusion to mask the wind when the player runs between buildings or hides on the lower floors. So, I implemented a simple occlusion system but I will talk more about the occlusion system in its own blog post. 
 
