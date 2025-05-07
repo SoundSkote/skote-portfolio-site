@@ -65,7 +65,7 @@ The map looks like a circular sky island consisting of two floors. There are thr
 
 **Portal Loop**
 
-
+(This BP has been updated. You can check it on **[[Blog05](https://www.georgiosaudio.com/blog/Blog05_Weapons_Part_2)** & **[Blog08](https://www.georgiosaudio.com/blog/Blog08_Final_Audio_Mix_Optimisation_&_Bug_Fixes)**.
 
 The sound of the portal was the first sound I made for Lyra because it’s creative and easy to implement. 
 
