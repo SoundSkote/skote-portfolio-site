@@ -74,7 +74,7 @@ Using the blueprint’s event graph we can easily check whether the weapon is a 
 
 ## Portal
 
-(This BP has been updated. You can check it on the **<[Blog08](https://www.georgiosaudio.com/blog/Blog08_Final_Audio_Mix_Optimisation_&_Bug_Fixes)>**.
+(This BP has been updated. You can check it on **[Blog08](https://www.georgiosaudio.com/blog/Blog08_Final_Audio_Mix_Optimisation_&_Bug_Fixes)**.
 
 The interaction with the portal is another important sound in the game, as it gives audio information to other players when used. While testing the game, I discovered that not only does it teleport characters, but it also teleports grenades! Portals are an easy way to flank, so pinpointing which portal was used is crucial. Therefore, this sound needs to be spatialized. However, I didn’t like how it sounded when the player used it, so I decided to adjust the stereo information based on who or what is using the portal. 
 
@@ -110,7 +110,7 @@ The blueprint logic is straightforward. When there’s an overlap, it checks wha
 
 ## Control Point
 
-(This BP has been updated. You can check the update on **[Blog08](https://www.georgiosaudio.com/blog/Blog08_Final_Audio_Mix_Optimisation_&_Bug_Fixes)**.
+(This BP has been updated. You can check the update **[Blog08](https://www.georgiosaudio.com/blog/Blog08_Final_Audio_Mix_Optimisation_&_Bug_Fixes)**.
 
 The control point is definitely the most interesting system in this blog, as it is the most complex mechanism but also quite standard for many multiplayer shooters, from older games like the *Call of Duty* series (Capture the Flag mode) to more recent ones like *xDefiant* (Domination mode). The goal of this mode is to capture and control the three points on the map for as long as possible, scoring points in the process. The first team to reach 125 points wins!
 
