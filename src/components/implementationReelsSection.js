@@ -38,7 +38,7 @@ function ImplementationReels() {
             <div className='flex flex-col space-y-5 ml-5 pt-5 px-5 z-10 w-full text-black text-xl 2xl:text-2xl lg:w-1/2 bg-white'>
                 <h1 className='font-extrabold text-3xl 2xl:text-4xl'>Lyra Implementation Showreel</h1>
                 <h2 className='font-bold bg-white'>Sound Design & Unreal Engine 5 & Wwise</h2>
-                <p className='text-left bg-white'>This video shows my favourite systems I made for the Lyra audio redesign. You can find more about its development on my Blog.</p>
+                <p className='text-left bg-white'>This video dives into my favourite audio systems that I made for Lyra such as surface depended sweeteners, an anti-camping system and a stereo slapback delay. You can also find more about its development on my Blog page.</p>
             </div>
 
           </div>
