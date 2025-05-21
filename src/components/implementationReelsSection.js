@@ -43,8 +43,8 @@ function ImplementationReels() {
 
           </div>
 
-        </div>
- /*
+  /*      </div>
+ 
         <div className='flex flex-col w-full space-y-5 lg:flex-row lg:space-y-0 pt-20 items-center'>
 
           <div className='flex flex-col w-full space-y-5 lg:flex-row lg:space-y-0 pt-20 items-center'>
@@ -58,9 +58,9 @@ function ImplementationReels() {
             <div id="video-wrapper2" className='relative flex w-[90%] h-[90%] items-end p-8'>
               <ReactPlayer width='100%' height='100%' style={style} url='https://vimeo.com/899576845' controls={true}/>  
             </div>
-*/p
-          </div>
 
+          </div>
+*/
         </div>
 
       </div>
