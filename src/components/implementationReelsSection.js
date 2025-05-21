@@ -43,7 +43,7 @@ function ImplementationReels() {
 
           </div>
 
-  /*      </div>
+  {/*      </div>
  
         <div className='flex flex-col w-full space-y-5 lg:flex-row lg:space-y-0 pt-20 items-center'>
 
@@ -60,7 +60,7 @@ function ImplementationReels() {
             </div>
 
           </div>
-*/
+*/}
         </div>
 
       </div>
