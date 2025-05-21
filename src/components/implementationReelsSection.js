@@ -23,7 +23,7 @@ function ImplementationReels() {
       <div className="flex flex-col justify-center items-center pt-16 space-y-10 z-50 px-10 lg:px-36 xl:px-56">
         <div className='flex flex-row justify-center items-center space-x-5 text-black'>
           
-          <h1 className='text-3xl font-extrabold lg:text-5xl'>Implementation Reels</h1>
+          <h1 className='text-3xl font-extrabold lg:text-5xl'>Implementation Reel</h1>
           
         </div>
 
