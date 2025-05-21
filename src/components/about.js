@@ -30,8 +30,8 @@ function About() {
               <li>Control</li>
               <li>The Finals</li>
               <li>Cyberpunk 2077</li>
+              <li>Alien: Isolation</li>
               <li>Titanfall 2</li>
-              <li>Amnesia Series</li>
             </ul>
             <ul className='lg:w-1/3'>
               <li className='font-extrabold underline pb-5 list-none'>Can't wait to play:</li>
