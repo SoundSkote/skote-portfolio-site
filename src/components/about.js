@@ -13,7 +13,7 @@ function About() {
           <h1>Welcome!</h1>
           <p>I’m Georgios Georgakis, a game audio designer from Athens, Greece.</p>
           <p>My passion for audio began at an early age when I started playing drums and recording music with my friends. I went on to earn a Bachelor’s degree in Music Technology & Acoustics. During my Bachelor’s degree, I discovered the magic of sound design and became passionate about game audio. This led me to relocate to Leeds and graduate from the Sound and Music for Interactive Games master’s program at Leeds Beckett University, which allowed me to further explore game audio design and the video game industry. Additionally, I love connecting with like-minded people and regularly attend game industry events.</p>
-          <p>To date, I’ve been involved with a couple of indie titles such as Carbonflesh and Selini. I have also collaborated with Epic Stock Media to create sound libraries, alongside pursuing several personal projects, and enthusiastically participating in game jams.</p>
+          <p>To date, I’ve been involved with titles such as Defect, Carbonflesh and Selini. I have also collaborated with Epic Stock Media to create sound libraries, and have experience with linear sound design alongside pursuing several personal projects, and enthusiastically participating in game jams.</p>
           <p>I revel in the creative freedom this field offers and I love the power of procedural sound design. As for my preferred tools, I tend to favor Reaper for sound design, Wwise for implementation and Unreal Engine as a game engine.</p>
           
         </p>
