@@ -27,7 +27,7 @@ function About() {
           <div className='flex flex-col w-full space-y-5 text-gray-200 justify-between items-center lg:flex-row lg:space-y-0 text-center'>
             <ul className='lg:w-1/3'>
               <li className='font-extrabold underline pb-5 list-none'>My favourite games:</li>
-              <li>Control</li>
+              <li>Returnal</li>
               <li>The Finals</li>
               <li>Cyberpunk 2077</li>
               <li>Alien: Isolation</li>
