@@ -10,11 +10,11 @@ function About() {
           <img className="w-full object-cover" src={image} alt='Profile'/>
         </div>
         <p className='text-xl text-gray-200 break-words text-left flex-1 space-y-5 xl:text-2xl'>
-          <h1>Welcome!</h1>
-          <p>I’m Georgios Georgakis, a game audio designer from Athens, Greece.</p>
+          //<h1>Hello!</h1>
+          <p>Hi, I'm Georgios a game audio designer from Greece currently based in Leeds, UK. Thank you for looking at my work.</p>
           <p>My passion for audio began at an early age when I started playing drums and recording music with my friends. I went on to earn a Bachelor’s degree in Music Technology & Acoustics. During my Bachelor’s degree, I discovered the magic of sound design and became passionate about game audio. This led me to relocate to Leeds and graduate from the Sound and Music for Interactive Games master’s program at Leeds Beckett University, which allowed me to further explore game audio design and the video game industry. Additionally, I love connecting with like-minded people and regularly attend game industry events.</p>
-          <p>To date, I’ve been involved with titles such as Defect, Carbonflesh and Selini. I have also collaborated with Epic Stock Media to create sound libraries, and have experience with linear sound design alongside pursuing several personal projects, and enthusiastically participating in game jams.</p>
-          <p>I revel in the creative freedom this field offers and I love the power of procedural sound design. As for my preferred tools, I tend to favor Reaper for sound design, Wwise for implementation and Unreal Engine as a game engine.</p>
+          <p>Currently, I work with emptyvessel on their title DEFECT. Before this, I have been involved with titles such as Carbonflesh and Selini, worked on post-production and have also experience working with sound libraries. Alongside, I have been pursuing several personal projects, and enthusiastically participating in game jams.</p>
+          <p>I revel in the creative freedom this field offers and I love the power its storytelling. As for my preferred tools, I favor Reaper for sound design, Wwise for implementation and Unreal Engine as a game engine.</p>
           
         </p>
       </div>
@@ -36,7 +36,7 @@ function About() {
             <ul className='lg:w-1/3'>
               <li className='font-extrabold underline pb-5 list-none'>Can't wait to play:</li>
               <li>Alien: Isolation 2</li>
-              <li>007 First Light</li>
+              <li>CONTROL Resonant</li>
               <li>Resident Evil Veronica</li>
               <li>ILL</li>
               <li>Blight: Survival</li>
