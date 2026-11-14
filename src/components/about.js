@@ -10,7 +10,7 @@ function About() {
           <img className="w-full object-cover" src={image} alt='Profile'/>
         </div>
         <p className='text-xl text-gray-200 break-words text-left flex-1 space-y-5 xl:text-2xl'>
-          <h1></h1>
+    
           <p>Hi, I'm Georgios a game audio designer from Greece currently based in Leeds, UK. Thank you for looking at my work.</p>
           <p>My passion for audio began at an early age when I started playing drums and recording music with my friends. I went on to earn a Bachelor’s degree in Music Technology & Acoustics. During my Bachelor’s degree, I discovered the magic of sound design and became passionate about game audio. This led me to relocate to Leeds and graduate from the Sound and Music for Interactive Games master’s program at Leeds Beckett University, which allowed me to further explore game audio design and the video game industry. Additionally, I love connecting with like-minded people and regularly attend game industry events.</p>
           <p>Currently, I work with emptyvessel on their title DEFECT. Before this, I have been involved with titles such as Carbonflesh and Selini, worked on post-production and have also experience working with sound libraries. Alongside, I have been pursuing several personal projects, and enthusiastically participating in game jams.</p>
